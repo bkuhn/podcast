@@ -1,0 +1,19 @@
+# -- podcast README -- #
+
+Included in this tar file:
+
+* podcast: the app
+* config: an example config file
+* cache/: an empty cache directory
+* audio/: an empty audio directory
+
+Start by opening up podcast and changing $cfg->{config} to have the correct 
+path to the config file.
+
+Next, open up the config file and change the paths for <cache> and <local> 
+to point to a cache directory and a local audio directory, respectively.  
+These could well be the empty directories created by untarring, or they 
+could be elsewhere if you feel so-inclined.
+
+Input the information for the feeds you're interested in, following the model 
+in the included entries.
