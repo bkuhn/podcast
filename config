@@ -1,29 +1,246 @@
 <config>
 
-	<cache>/home/eric/projects/podcast/cache</cache>
-	<local>/home/eric/projects/podcast/audio</local>
-	<feed name="Left, Right &amp; Center">
-		<url>http://kcrw.com/podcast/show/lr</url>
-		<count>3</count>
-		<title>LR: %Y/%m/%d #T#</title>
-		<artist>Left, Right, &amp; Center</artist>
-	</feed>
-	<feed name="Which Way LA">
-		<url>http://kcrw.com/podcast/show/ww</url>
-		<count>3</count>
-		<title>WW: %Y/%m/%d #T#</title>
-		<artist>Which Way, L.A.?</artist>
-	</feed>
-	<feed name="Design &amp; Architecture">
-		<url>http://kcrw.com/podcast/show/de</url>
+	<cache>/home/bkuhn/Files/Audio/podcast-cache</cache>
+	<local>/home/bkuhn/Files/Audio/Portable/Podcast</local>
+	<feed name="WaitWait">
+		<url>http://www.npr.org/rss/podcast.php?id=35</url>
 		<count>2</count>
-		<title>D&amp;A: %Y/%m/%d #T#</title>
-		<artist>Design &amp; Architecture</artist>
+            <subdir>WaitWait</subdir>
+            <title>%Y-%m-%d: Wait, Wait... Don't Tell Me</title>
+            <album>%Y: Wait, Wait... Don't Tell Me</album>
+            <artist>Wait, Wait ... Don't Tell Me</artist>
 	</feed>
-	<feed name="To The Point">
-		<url>http://kcrw.com/podcast/show/tp</url>
-		<count>3</count>
-		<title>TP: %Y/%m/%d #T#</title>
-		<artist>To The Point</artist>
+      <feed name="SundayPuzzle">
+         <subdir>SundayPuzzle</subdir>
+         <count>2</count>
+         <title>%Y-%m-%d: Puzzle: #T#</title>
+         <artist>Will Shortz</artist>
+         <album>%Y: NPR Sunday Puzzle</album>
+         <url>http://www.npr.org/rss/podcast.php?id=4473090</url>
+      </feed>
+      <feed name="NPRGambling">
+        <subdir>NPRGambling</subdir>
+         <url>http://www.npr.org/rss/podcast.php?id=510020</url>
+         <count>1</count>
+         <artist>Mike Pesca</artist>
+         <title>%Y-%m-%d: #T#</title>
+         <album>%Y: NPR Gambling</album>
+      </feed>
+      <feed name="NPRNews1600">
+        <subdir>NPRNews1600</subdir>
+        <url>http://www.npr.org/rss/podcast.php?id=500003</url>
+        <album>%Y: NPR News Summaries</album>
+        <title>%Y-%m-%d 16:00: #T#</title>
+        <artist>NPR</artist>
+        <count>2</count>
+      </feed>
+      <feed name="Rounders">
+        <subdir>Rounders</subdir>
+        <url>http://www.bigpoker.ca/rounders/rounders-rssfeed.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Rounders</artist>
+        <album>%Y: Rounders</album>
+        <count>2</count>
+      </feed>
+      <feed name="LUGRadio">
+        <subdir>LUG</subdir>
+        <url>http://www.lugradio.org/episodes.rss</url>
+        <title>%Y-%m-%d: LUGRadio: #T#</title>
+        <artist>LUG</artist>
+        <album>%Y: LUG Radio</album>
+        <count>2</count>
+      </feed>
+	<feed name="NY Times: Pogue on Technology">
+		<url>http://www.nytimes.com/services/xml/rss/nyt/podcasts/pogue.xml</url>
+		<count>2</count>
+            <subdir>NYTimes</subdir>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: Pogue on Technology</album>
+		<artist>NY Times: Pogue on Technology</artist>
 	</feed>
+	<feed name="PokerWire">
+		<url>http://www.switchpod.com/users/pokerwire/podcast.xml</url>
+		<count>2</count>
+            <subdir>PokerWire</subdir>
+            <title>%Y-%m-%d: #T#</title>
+            <artist>#N#</artist>
+             <album>%Y: Poker Wire</album>
+	</feed>
+	<feed name="PerlCast">
+		<url>http://www.perlcast.com/rss/current.xml</url>
+		<count>2</count>
+            <subdir>PerlCast</subdir>
+                <artist>Perl Cast</artist>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: Perl Cast</album>
+	</feed>
+	<feed name="GordonWSoP">
+		<url>http://feeds.feedburner.com/expertinsight_wsop</url>
+		<count>2</count>
+            <subdir>GordonWSoP</subdir>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: Gordon WSoP</album>
+	</feed>
+	<feed name="AsteriskUser">
+		<url>http://feeds.feedburner.com/AstUser</url>
+		<count>2</count>
+            <subdir>AsteriskUser</subdir>
+		<title>%Y-%m-%d: #T#</title>
+                <artist>Asterisk User Podcast</artist>
+                <album>%Y: AsteriskUser</album>
+	</feed>
+      <feed name="ThisAmericanLife">
+        <subdir>ThisAmericanLife</subdir>
+        <url>http://feeds.thisamericanlife.org/talpodcast</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>This American Life</artist>
+        <album>%Y: This American Life</album>
+        <count>5000</count>
+      </feed>
+      <feed name="LinuxLinkTechShow">
+        <subdir>LinuxLinkTech</subdir>
+        <url>http://feeds.feedburner.com/TheLinuxLinkTechShowMp3Feed</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Linux Link Tech Show</artist>
+        <album>%Y: Linux Link Tech Show</album>
+        <count>2</count>
+      </feed>
+      <feed name="LinuxQuestionsPodcast">
+        <subdir>LinuxQuestions</subdir>
+        <url>http://feeds.feedburner.com/linuxquestions/LQPodcast</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Linux Questions Podcast</artist>
+        <album>%Y: Linux Questions Podcast</album>
+        <count>2</count>
+      </feed>
+      <feed name="LinuxAction">
+        <subdir>LinuxAction</subdir>
+        <url>http://feeds.feedburner.com/TheLinuxActionShow</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Linux Action Show</artist>
+        <album>%Y: Linux Action Show</album>
+        <count>2</count>
+      </feed>
+      <feed name="BSDTalk">
+        <subdir>BSDTalk</subdir>
+        <url>http://feeds.feedburner.com/Bsdtalk</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>BSD Talk</artist>
+        <album>%Y: BSD Talk</album>
+        <count>2</count>
+      </feed>
+      <feed name="PotterCast">
+        <subdir>PotterCast</subdir>
+        <url>http://feeds.feedburner.com/potter-cast</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Potter Cast</artist>
+        <album>%Y: Potter Cast</album>
+        <count>2</count>
+      </feed>
+      <feed name="FLOSSWeekly">
+        <subdir>FLOSSWeekly</subdir>
+        <url>http://leoville.tv/podcasts/floss.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>FLOSS Weekly</artist>
+        <album>%Y: FLOSS Weekly</album>
+        <count>2</count>
+      </feed>
+      <feed name="BigPokerSunday">
+        <subdir>BigPokerSunday</subdir>
+        <url>http://www.pokerroad.com/_/big_poker_sundays/rss.xml</url>
+        <title>%Y-%m-%d: Big Poker Sunday: #T#</title>
+        <artist>Big Poker Sundays</artist>
+        <album>%Y: Big Poker Sundays</album>
+        <count>4</count>
+      </feed>
+      <feed name="BearPokerTips">
+        <subdir>BearPokerTips</subdir>
+        <url>http://www.pokerroad.com/_/tips_from_the_bear/rss.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Barry Greenstein</artist>
+        <album>%Y: Tips from the Bear</album>
+        <count>2</count>
+      </feed>
+      <feed name="PokerRoad">
+        <subdir>PokerRoad</subdir>
+        <url>http://www.pokerroad.com/_/pokerroad_radio/rss.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Poker Road Radio</artist>
+        <album>%Y: Poker Road Radio</album>
+        <count>6</count>
+      </feed>
+      <feed name="SourceTrunk">
+        <subdir>SourceTrunk</subdir>
+        <url>http://feeds.feedburner.com/sourcetrunk</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Source Trunk</artist>
+        <album>%Y: Source Trunk</album>
+        <count>2</count>
+      </feed>
+      <feed name="OpenNews">
+        <subdir>OpenNews</subdir>
+        <url>http://www.opennewsshow.org/mp3.xml</url> 
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Open News</artist>
+        <album>%Y: Open News</album>
+        <count>2</count>
+      </feed>
+      <feed name="LinuxOutlaws">
+        <subdir>LinuxOutlaws</subdir>
+        <url>http://feeds.feedburner.com/linuxoutlaws</url> 
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Linux Outlaws</artist>
+        <album>%Y: Linux Outlaws</album>
+        <count>2</count>
+      </feed>
+      <feed name="FutureTense">
+        <subdir>FutureTense</subdir>
+        <url>http://www.npr.org/rss/podcast.php?id=510014</url> 
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Future Tense</artist>
+        <album>%Y: Future Tense</album>
+        <count>2</count>
+      </feed>
+      <feed name="NetworkSecurity">
+        <subdir>NetworkSecurity</subdir>
+        <url>http://mckeay.libsyn.com/rss</url> 
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Network Security</artist>
+        <album>%Y: Network Security</album>
+        <count>2</count>
+      </feed>
+      <feed name="LinuxReality">
+        <subdir>LinuxReality</subdir>
+        <url>http://feeds.feedburner.com/linuxreality-mp3</url> 
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Linux Reality</artist>
+        <album>%Y: Linux Reality</album>
+        <count>2</count>
+      </feed>
+      <feed name="TwoPlusTwoPokerCast">
+        <subdir>TwoPlusTwoPokerCast</subdir>
+        <url>http://pokercast.twoplustwo.com/pokercast.rss</url> 
+        <title>%Y-%m-%d: #T#</title>
+        <artist>2+2 PokerCast</artist>
+        <album>%Y: 2+2 PokerCast</album>
+        <count>20</count>
+      </feed>
+      <feed name="TwistedShow">
+        <subdir>TwistedShow</subdir>
+        <url>http://feeds.feedburner.com/TheTwistedShow</url> 
+        <title>%Y-%m-%d: #T#</title>
+        <artist>The Twisted Show</artist>
+        <album>%Y: The Twisted Show</album>
+        <count>5</count>
+      </feed>
+      <feed name="CashPlays">
+        <subdir>CashPlays</subdir>
+        <url>http://www.pokerroad.com/cash_plays/rss.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Cash Plays</artist>
+        <album>%Y: Cash Plays</album>
+        <count>5</count>
+      </feed>
+
 </config>
+
