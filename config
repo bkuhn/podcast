@@ -4,7 +4,7 @@
 	<local>/home/bkuhn/Files/Audio/Portable/Podcast</local>
 	<feed name="WaitWait">
 		<url>http://www.npr.org/rss/podcast.php?id=35</url>
-		<count>2</count>
+		<count>10</count>
             <subdir>WaitWait</subdir>
             <title>%Y-%m-%d: Wait, Wait... Don't Tell Me</title>
             <album>%Y: Wait, Wait... Don't Tell Me</album>
@@ -12,7 +12,7 @@
 	</feed>
       <feed name="SundayPuzzle">
          <subdir>SundayPuzzle</subdir>
-         <count>2</count>
+         <count>10</count>
          <title>%Y-%m-%d: Puzzle: #T#</title>
          <artist>Will Shortz</artist>
          <album>%Y: NPR Sunday Puzzle</album>
@@ -32,7 +32,7 @@
         <album>%Y: NPR News Summaries</album>
         <title>%Y-%m-%d 16:00: #T#</title>
         <artist>NPR</artist>
-        <count>2</count>
+        <count>1</count>
       </feed>
       <feed name="Rounders">
         <subdir>Rounders</subdir>
@@ -48,7 +48,7 @@
         <title>%Y-%m-%d: LUGRadio: #T#</title>
         <artist>LUG</artist>
         <album>%Y: LUG Radio</album>
-        <count>2</count>
+        <count>6</count>
       </feed>
 	<feed name="NY Times: Pogue on Technology">
 		<url>http://www.nytimes.com/services/xml/rss/nyt/podcasts/pogue.xml</url>
@@ -103,7 +103,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Link Tech Show</artist>
         <album>%Y: Linux Link Tech Show</album>
-        <count>2</count>
+        <count>1</count>
       </feed>
       <feed name="LinuxQuestionsPodcast">
         <subdir>LinuxQuestions</subdir>
@@ -119,7 +119,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Action Show</artist>
         <album>%Y: Linux Action Show</album>
-        <count>2</count>
+        <count>6</count>
       </feed>
       <feed name="BSDTalk">
         <subdir>BSDTalk</subdir>
@@ -127,7 +127,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>BSD Talk</artist>
         <album>%Y: BSD Talk</album>
-        <count>2</count>
+        <count>6</count>
       </feed>
       <feed name="PotterCast">
         <subdir>PotterCast</subdir>
@@ -135,7 +135,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Potter Cast</artist>
         <album>%Y: Potter Cast</album>
-        <count>2</count>
+        <count>1</count>
       </feed>
       <feed name="FLOSSWeekly">
         <subdir>FLOSSWeekly</subdir>
@@ -151,7 +151,7 @@
         <title>%Y-%m-%d: Big Poker Sunday: #T#</title>
         <artist>Big Poker Sundays</artist>
         <album>%Y: Big Poker Sundays</album>
-        <count>4</count>
+        <count>6</count>
       </feed>
       <feed name="BearPokerTips">
         <subdir>BearPokerTips</subdir>
@@ -159,7 +159,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Barry Greenstein</artist>
         <album>%Y: Tips from the Bear</album>
-        <count>2</count>
+        <count>6</count>
       </feed>
       <feed name="PokerRoad">
         <subdir>PokerRoad</subdir>
@@ -167,7 +167,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Poker Road Radio</artist>
         <album>%Y: Poker Road Radio</album>
-        <count>6</count>
+        <count>8</count>
       </feed>
       <feed name="SourceTrunk">
         <subdir>SourceTrunk</subdir>
@@ -191,7 +191,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Outlaws</artist>
         <album>%Y: Linux Outlaws</album>
-        <count>2</count>
+        <count>6</count>
       </feed>
       <feed name="FutureTense">
         <subdir>FutureTense</subdir>
@@ -239,7 +239,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Cash Plays</artist>
         <album>%Y: Cash Plays</album>
-        <count>5</count>
+        <count>20</count>
       </feed>
 
 </config>
