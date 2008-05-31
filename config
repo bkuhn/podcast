@@ -34,14 +34,6 @@
         <artist>NPR</artist>
         <count>1</count>
       </feed>
-      <feed name="Rounders">
-        <subdir>Rounders</subdir>
-        <url>http://www.bigpoker.ca/rounders/rounders-rssfeed.xml</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Rounders</artist>
-        <album>%Y: Rounders</album>
-        <count>2</count>
-      </feed>
       <feed name="LUGRadio">
         <subdir>LUG</subdir>
         <url>http://www.lugradio.org/episodes.rss</url>
