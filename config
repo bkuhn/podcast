@@ -66,13 +66,6 @@
 		<title>%Y-%m-%d: #T#</title>
                 <album>%Y: Perl Cast</album>
 	</feed>
-	<feed name="GordonWSoP">
-		<url>http://feeds.feedburner.com/expertinsight_wsop</url>
-		<count>2</count>
-            <subdir>GordonWSoP</subdir>
-		<title>%Y-%m-%d: #T#</title>
-                <album>%Y: Gordon WSoP</album>
-	</feed>
 	<feed name="AsteriskUser">
 		<url>http://feeds.feedburner.com/AstUser</url>
 		<count>2</count>
