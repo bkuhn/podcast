@@ -234,6 +234,21 @@
         <album>%Y: Cash Plays</album>
         <count>20</count>
       </feed>
-
+      <feed name="OTR">
+        <subdir>OTR</subdir>
+        <url>http://otrpodcast.libsyn.com/rss</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Old Time Radio</artist>
+        <album>%Y: OTR</album>
+        <count>50</count>
+      </feed>
+      <feed name="LinuxFoundation">
+        <subdir>LinuxFoundation</subdir>
+        <url>http://linux-foundation.org/weblogs/openvoices/?feed=podcast</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Linux Foundation</artist>
+        <album>%Y: Linux Foundation</album>
+        <count>10</count>
+      </feed>
 </config>
 
