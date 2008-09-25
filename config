@@ -136,7 +136,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>FLOSS Weekly</artist>
         <album>%Y: FLOSS Weekly</album>
-        <count>2</count>
+        <count>6</count>
       </feed>
       <feed name="BigPokerSunday">
         <subdir>BigPokerSunday</subdir>
@@ -160,7 +160,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Poker Road Radio</artist>
         <album>%Y: Poker Road Radio</album>
-        <count>8</count>
+        <count>10</count>
       </feed>
       <feed name="SourceTrunk">
         <subdir>SourceTrunk</subdir>
@@ -184,7 +184,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Outlaws</artist>
         <album>%Y: Linux Outlaws</album>
-        <count>6</count>
+        <count>8</count>
       </feed>
       <feed name="FutureTense">
         <subdir>FutureTense</subdir>
@@ -233,6 +233,22 @@
         <artist>Cash Plays</artist>
         <album>%Y: Cash Plays</album>
         <count>20</count>
+      </feed>
+      <feed name="StanfordCIS">
+        <subdir>Stanford</subdir>
+        <url>http://cyberlaw.stanford.edu/podcasts/podcast_rss.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Stanford Center for Internet and Society</artist>
+        <album>%Y: Stanford CIS</album>
+        <count>5</count>
+      </feed>
+      <feed name="SERadio">
+        <subdir>SERadio</subdir>
+        <url>http://feeds.feedburner.com/se-radio</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Software Engineering Radio</artist>
+        <album>%Y: Software Engineering Radio</album>
+        <count>5</count>
       </feed>
       <feed name="OTR">
         <subdir>OTR</subdir>
