@@ -42,14 +42,6 @@
         <album>%Y: LUG Radio</album>
         <count>6</count>
       </feed>
-      <feed name="FOSSGeek">
-        <subdir>FOSSGeek</subdir>
-        <url>http://fossgeek.com/feeds/rss-mp3-full.xml</url>
-        <title>%Y-%m-%d: FOSSGeek: #T#</title>
-        <artist>FOSSGeek</artist>
-        <album>%Y: FOSSGeek</album>
-        <count>4</count>
-      </feed>
 	<feed name="NY Times: Pogue on Technology">
 		<url>http://www.nytimes.com/services/xml/rss/nyt/podcasts/pogue.xml</url>
 		<count>2</count>
@@ -57,14 +49,6 @@
 		<title>%Y-%m-%d: #T#</title>
                 <album>%Y: Pogue on Technology</album>
 		<artist>NY Times: Pogue on Technology</artist>
-	</feed>
-	<feed name="PokerWire">
-		<url>http://www.switchpod.com/users/pokerwire/podcast.xml</url>
-		<count>2</count>
-            <subdir>PokerWire</subdir>
-            <title>%Y-%m-%d: #T#</title>
-            <artist>#N#</artist>
-             <album>%Y: Poker Wire</album>
 	</feed>
 	<feed name="PerlCast">
 		<url>http://www.perlcast.com/rss/current.xml</url>
@@ -138,29 +122,45 @@
         <album>%Y: FLOSS Weekly</album>
         <count>6</count>
       </feed>
-      <feed name="BigPokerSunday">
-        <subdir>BigPokerSunday</subdir>
-        <url>http://www.pokerroad.com/_/big_poker_sundays/rss.xml</url>
-        <title>%Y-%m-%d: Big Poker Sunday: #T#</title>
-        <artist>Big Poker Sundays</artist>
-        <album>%Y: Big Poker Sundays</album>
-        <count>6</count>
+      <feed name="PokerRoad">
+        <subdir>PokerRoad</subdir>
+        <url>http://www.pokerroad.com/pokerroad_radio/rss.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Poker Road Radio</artist>
+        <album>%Y: Poker Road Radio</album>
+        <count>70</count>
       </feed>
       <feed name="BearPokerTips">
         <subdir>BearPokerTips</subdir>
-        <url>http://www.pokerroad.com/_/tips_from_the_bear/rss.xml</url>
+        <url>http://www.pokerroad.com/tips_from_the_bear/rss.xml</url>
         <title>%Y-%m-%d: #T#</title>
         <artist>Barry Greenstein</artist>
         <album>%Y: Tips from the Bear</album>
         <count>6</count>
       </feed>
-      <feed name="PokerRoad">
-        <subdir>PokerRoad</subdir>
-        <url>http://www.pokerroad.com/_/pokerroad_radio/rss.xml</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Poker Road Radio</artist>
-        <album>%Y: Poker Road Radio</album>
-        <count>10</count>
+      <feed name="BigPokerSunday">
+        <subdir>BigPokerSunday</subdir>
+        <url>http://www.pokerroad.com/big_poker_sundays/rss.xml</url>
+        <title>%Y-%m-%d: Big Poker Sunday: #T#</title>
+        <artist>Big Poker Sundays</artist>
+        <album>%Y: Big Poker Sundays</album>
+        <count>25</count>
+      </feed>
+      <feed name="AllStrategy">
+        <subdir>PokerAllStrategy</subdir>
+        <url>http://www.pokerroad.com/all_strategy/rss.xml</url>
+        <title>%Y-%m-%d: All Strategy: #T#</title>
+        <artist>All Strategy</artist>
+        <album>%Y: All Strategy</album>
+        <count>25</count>
+      </feed>
+      <feed name="BearBlog">
+        <subdir>BearBlog</subdir>
+        <url>http://www.pokerroad.com/the_bear_blog/rss.xml</url>
+        <title>%Y-%m-%d: Bear Blog: #T#</title>
+        <artist>Bear Blog</artist>
+        <album>%Y: Bear Blog</album>
+        <count>30</count>
       </feed>
       <feed name="SourceTrunk">
         <subdir>SourceTrunk</subdir>
@@ -250,21 +250,13 @@
         <album>%Y: Software Engineering Radio</album>
         <count>5</count>
       </feed>
-      <feed name="OTR">
-        <subdir>OTR</subdir>
-        <url>http://otrpodcast.libsyn.com/rss</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Old Time Radio</artist>
-        <album>%Y: OTR</album>
-        <count>50</count>
-      </feed>
       <feed name="LinuxFoundation">
         <subdir>LinuxFoundation</subdir>
         <url>http://linux-foundation.org/weblogs/openvoices/?feed=podcast</url>
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Foundation</artist>
         <album>%Y: Linux Foundation</album>
-        <count>10</count>
+        <count>20</count>
       </feed>
 </config>
 
