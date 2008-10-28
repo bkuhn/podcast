@@ -40,7 +40,7 @@
         <title>%Y-%m-%d: LUGRadio: #T#</title>
         <artist>LUG</artist>
         <album>%Y: LUG Radio</album>
-        <count>6</count>
+        <count>2</count>
       </feed>
 	<feed name="NY Times: Pogue on Technology">
 		<url>http://www.nytimes.com/services/xml/rss/nyt/podcasts/pogue.xml</url>
@@ -233,14 +233,6 @@
         <artist>Cash Plays</artist>
         <album>%Y: Cash Plays</album>
         <count>20</count>
-      </feed>
-      <feed name="StanfordCIS">
-        <subdir>Stanford</subdir>
-        <url>http://cyberlaw.stanford.edu/podcasts/podcast_rss.xml</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Stanford Center for Internet and Society</artist>
-        <album>%Y: Stanford CIS</album>
-        <count>5</count>
       </feed>
       <feed name="SERadio">
         <subdir>SERadio</subdir>
