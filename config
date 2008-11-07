@@ -40,7 +40,7 @@
         <title>%Y-%m-%d: LUGRadio: #T#</title>
         <artist>LUG</artist>
         <album>%Y: LUG Radio</album>
-        <count>2</count>
+        <count>1</count>
       </feed>
 	<feed name="NY Times: Pogue on Technology">
 		<url>http://www.nytimes.com/services/xml/rss/nyt/podcasts/pogue.xml</url>
@@ -96,7 +96,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Action Show</artist>
         <album>%Y: Linux Action Show</album>
-        <count>6</count>
+        <count>2</count>
       </feed>
       <feed name="BSDTalk">
         <subdir>BSDTalk</subdir>
@@ -128,7 +128,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Poker Road Radio</artist>
         <album>%Y: Poker Road Radio</album>
-        <count>70</count>
+        <count>5</count>
       </feed>
       <feed name="BearPokerTips">
         <subdir>BearPokerTips</subdir>
@@ -136,7 +136,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Barry Greenstein</artist>
         <album>%Y: Tips from the Bear</album>
-        <count>6</count>
+        <count>3</count>
       </feed>
       <feed name="BigPokerSunday">
         <subdir>BigPokerSunday</subdir>
@@ -152,7 +152,7 @@
         <title>%Y-%m-%d: All Strategy: #T#</title>
         <artist>All Strategy</artist>
         <album>%Y: All Strategy</album>
-        <count>25</count>
+        <count>3</count>
       </feed>
       <feed name="BearBlog">
         <subdir>BearBlog</subdir>
@@ -160,7 +160,7 @@
         <title>%Y-%m-%d: Bear Blog: #T#</title>
         <artist>Bear Blog</artist>
         <album>%Y: Bear Blog</album>
-        <count>30</count>
+        <count>3</count>
       </feed>
       <feed name="SourceTrunk">
         <subdir>SourceTrunk</subdir>
@@ -184,7 +184,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Outlaws</artist>
         <album>%Y: Linux Outlaws</album>
-        <count>8</count>
+        <count>5</count>
       </feed>
       <feed name="FutureTense">
         <subdir>FutureTense</subdir>
@@ -208,7 +208,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Reality</artist>
         <album>%Y: Linux Reality</album>
-        <count>2</count>
+        <count>1</count>
       </feed>
       <feed name="TwoPlusTwoPokerCast">
         <subdir>TwoPlusTwoPokerCast</subdir>
@@ -216,7 +216,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>2+2 PokerCast</artist>
         <album>%Y: 2+2 PokerCast</album>
-        <count>20</count>
+        <count>8</count>
       </feed>
       <feed name="TwistedShow">
         <subdir>TwistedShow</subdir>
@@ -232,7 +232,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Cash Plays</artist>
         <album>%Y: Cash Plays</album>
-        <count>20</count>
+        <count>5</count>
       </feed>
       <feed name="SERadio">
         <subdir>SERadio</subdir>
@@ -248,7 +248,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Foundation</artist>
         <album>%Y: Linux Foundation</album>
-        <count>20</count>
+        <count>5</count>
       </feed>
 </config>
 
