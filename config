@@ -210,6 +210,14 @@
         <album>%Y: Linux Reality</album>
         <count>1</count>
       </feed>
+      <feed name="ThisWeekInDjango">
+        <subdir>ThisWeekInDjango</subdir>
+        <url>http://media.djangonetcasts.com/twid_mp3.xml</url> 
+        <title>%Y-%m-%d: #T#</title>
+        <artist>This Week In Django</artist>
+        <album>%Y: This Week in Django</album>
+        <count>10</count>
+      </feed>
       <feed name="TwoPlusTwoPokerCast">
         <subdir>TwoPlusTwoPokerCast</subdir>
         <url>http://pokercast.twoplustwo.com/pokercast.rss</url> 
