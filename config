@@ -12,7 +12,7 @@
 	</feed>
       <feed name="SundayPuzzle">
          <subdir>SundayPuzzle</subdir>
-         <count>10</count>
+         <count>2</count>
          <title>%Y-%m-%d: Puzzle: #T#</title>
          <artist>Will Shortz</artist>
          <album>%Y: NPR Sunday Puzzle</album>
@@ -104,7 +104,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>BSD Talk</artist>
         <album>%Y: BSD Talk</album>
-        <count>6</count>
+        <count>2</count>
       </feed>
       <feed name="PotterCast">
         <subdir>PotterCast</subdir>
@@ -120,7 +120,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>FLOSS Weekly</artist>
         <album>%Y: FLOSS Weekly</album>
-        <count>6</count>
+        <count>2</count>
       </feed>
       <feed name="PokerRoad">
         <subdir>PokerRoad</subdir>
@@ -128,7 +128,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Poker Road Radio</artist>
         <album>%Y: Poker Road Radio</album>
-        <count>5</count>
+        <count>6</count>
       </feed>
       <feed name="BearPokerTips">
         <subdir>BearPokerTips</subdir>
@@ -136,7 +136,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Barry Greenstein</artist>
         <album>%Y: Tips from the Bear</album>
-        <count>3</count>
+        <count>2</count>
       </feed>
       <feed name="BigPokerSunday">
         <subdir>BigPokerSunday</subdir>
@@ -144,7 +144,7 @@
         <title>%Y-%m-%d: Big Poker Sunday: #T#</title>
         <artist>Big Poker Sundays</artist>
         <album>%Y: Big Poker Sundays</album>
-        <count>25</count>
+        <count>2</count>
       </feed>
       <feed name="AllStrategy">
         <subdir>PokerAllStrategy</subdir>
@@ -152,7 +152,7 @@
         <title>%Y-%m-%d: All Strategy: #T#</title>
         <artist>All Strategy</artist>
         <album>%Y: All Strategy</album>
-        <count>3</count>
+        <count>2</count>
       </feed>
       <feed name="BearBlog">
         <subdir>BearBlog</subdir>
@@ -160,7 +160,7 @@
         <title>%Y-%m-%d: Bear Blog: #T#</title>
         <artist>Bear Blog</artist>
         <album>%Y: Bear Blog</album>
-        <count>3</count>
+        <count>2</count>
       </feed>
       <feed name="SourceTrunk">
         <subdir>SourceTrunk</subdir>
@@ -184,7 +184,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Outlaws</artist>
         <album>%Y: Linux Outlaws</album>
-        <count>5</count>
+        <count>2</count>
       </feed>
       <feed name="FutureTense">
         <subdir>FutureTense</subdir>
@@ -216,7 +216,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>This Week In Django</artist>
         <album>%Y: This Week in Django</album>
-        <count>10</count>
+        <count>2</count>
       </feed>
       <feed name="TwoPlusTwoPokerCast">
         <subdir>TwoPlusTwoPokerCast</subdir>
@@ -224,7 +224,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>2+2 PokerCast</artist>
         <album>%Y: 2+2 PokerCast</album>
-        <count>8</count>
+        <count>2</count>
       </feed>
       <feed name="TwistedShow">
         <subdir>TwistedShow</subdir>
@@ -232,7 +232,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>The Twisted Show</artist>
         <album>%Y: The Twisted Show</album>
-        <count>5</count>
+        <count>2</count>
       </feed>
       <feed name="CashPlays">
         <subdir>CashPlays</subdir>
@@ -240,7 +240,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Cash Plays</artist>
         <album>%Y: Cash Plays</album>
-        <count>5</count>
+        <count>2</count>
       </feed>
       <feed name="SERadio">
         <subdir>SERadio</subdir>
@@ -248,7 +248,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Software Engineering Radio</artist>
         <album>%Y: Software Engineering Radio</album>
-        <count>5</count>
+        <count>2</count>
       </feed>
       <feed name="LinuxFoundation">
         <subdir>LinuxFoundation</subdir>
@@ -256,7 +256,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Foundation</artist>
         <album>%Y: Linux Foundation</album>
-        <count>5</count>
+        <count>2</count>
       </feed>
 </config>
 
