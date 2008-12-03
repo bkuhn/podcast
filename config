@@ -4,7 +4,7 @@
 	<local>/home/bkuhn/Files/Audio/Portable/Podcast</local>
 	<feed name="WaitWait">
 		<url>http://www.npr.org/rss/podcast.php?id=35</url>
-		<count>10</count>
+		<count>2</count>
             <subdir>WaitWait</subdir>
             <title>%Y-%m-%d: Wait, Wait... Don't Tell Me</title>
             <album>%Y: Wait, Wait... Don't Tell Me</album>
