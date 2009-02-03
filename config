@@ -2,14 +2,6 @@
 
 	<cache>/home/bkuhn/Files/Audio/podcast-cache</cache>
 	<local>/home/bkuhn/Files/Audio/Portable/Podcast</local>
-	<feed name="WaitWait">
-		<url>http://www.npr.org/rss/podcast.php?id=35</url>
-		<count>2</count>
-            <subdir>WaitWait</subdir>
-            <title>%Y-%m-%d: Wait, Wait... Don't Tell Me</title>
-            <album>%Y: Wait, Wait... Don't Tell Me</album>
-            <artist>Wait, Wait ... Don't Tell Me</artist>
-	</feed>
       <feed name="SundayPuzzle">
          <subdir>SundayPuzzle</subdir>
          <count>2</count>
@@ -18,6 +10,14 @@
          <album>%Y: NPR Sunday Puzzle</album>
          <url>http://www.npr.org/rss/podcast.php?id=4473090</url>
       </feed>
+	<feed name="WaitWait">
+		<url>http://www.npr.org/rss/podcast.php?id=35</url>
+		<count>2</count>
+            <subdir>WaitWait</subdir>
+            <title>%Y-%m-%d: Wait, Wait... Don't Tell Me</title>
+            <album>%Y: Wait, Wait... Don't Tell Me</album>
+            <artist>Wait, Wait ... Don't Tell Me</artist>
+	</feed>
       <feed name="NPRGambling">
         <subdir>NPRGambling</subdir>
          <url>http://www.npr.org/rss/podcast.php?id=510020</url>
@@ -92,7 +92,7 @@
       </feed>
       <feed name="LinuxAction">
         <subdir>LinuxAction</subdir>
-        <url>http://feeds.feedburner.com/TheLinuxActionShow</url>
+        <url>http://feeds2.feedburner.com/TheLinuxActionShow</url>
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Action Show</artist>
         <album>%Y: Linux Action Show</album>
@@ -105,14 +105,6 @@
         <artist>BSD Talk</artist>
         <album>%Y: BSD Talk</album>
         <count>2</count>
-      </feed>
-      <feed name="PotterCast">
-        <subdir>PotterCast</subdir>
-        <url>http://feeds.feedburner.com/potter-cast</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Potter Cast</artist>
-        <album>%Y: Potter Cast</album>
-        <count>1</count>
       </feed>
       <feed name="FLOSSWeekly">
         <subdir>FLOSSWeekly</subdir>
@@ -234,14 +226,6 @@
         <album>%Y: The Twisted Show</album>
         <count>2</count>
       </feed>
-      <feed name="CashPlays">
-        <subdir>CashPlays</subdir>
-        <url>http://www.pokerroad.com/cash_plays/rss.xml</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Cash Plays</artist>
-        <album>%Y: Cash Plays</album>
-        <count>2</count>
-      </feed>
       <feed name="SERadio">
         <subdir>SERadio</subdir>
         <url>http://feeds.feedburner.com/se-radio</url>
@@ -256,6 +240,22 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Foundation</artist>
         <album>%Y: Linux Foundation</album>
+        <count>2</count>
+      </feed>
+      <feed name="CashPlays">
+        <subdir>CashPlays</subdir>
+        <url>http://www.pokerroad.com/cash_plays/rss.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Cash Plays</artist>
+        <album>%Y: Cash Plays</album>
+        <count>2</count>
+      </feed>
+      <feed name="PhilIvey">
+        <subdir>PhilIvey</subdir>
+        <url>http://www.pokerroad.com/tuesdays_with_ivey/rss.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Phil Ivey</artist>
+        <album>%Y: Phil Ivey</album>
         <count>2</count>
       </feed>
 </config>
