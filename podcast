@@ -19,11 +19,11 @@ use strict;
 use vars qw( $cfg $config $args $parser $cache );
 
 $cfg = {
-	config	=> "/home/eric/projects/podcast/config",
+	config	=> "/home/bkuhn/Files/Audio/Programs/podcast-0.1/config",
 };
 
 #----------
-
+open(DOWNLOAD_LIST, ">>downloaded.list") or die "unable to open downloadedlist: $!";
 {
 	$parser = new XML::DOM::Parser;
 #	$parser = new XML::RSS::Parser;
@@ -37,15 +37,16 @@ $cfg = {
 	$cache = Cache::File->new( cache_root => $config->{cache} );
 	
 	# -- run through our feeds -- #
-
 	while ( my ($n,$f) = each %{ $config->{feed} } ) {
 		next if ( $f->{disabled} );
+                my $subdir = $config->{local} . '/' . $f->{subdir};
+                mkdir($subdir) unless -d $subdir;
 		
 		warn "feed name: $n\n";
-
-		my $rss = URI::Fetch->fetch( $f->{url} , {
-			Cache	=> $cache
-		} ) or die URI::Fetch->errstr();
+                print "URL $f->{url}\n";
+		my $rss = URI::Fetch->fetch( $f->{url} , 
+			(Cache	=> $cache)
+		 ) or die URI::Fetch->errstr();
 
 		if ( $rss->status == URI::Fetch::URI_OK() ) {
 			# go on to main handling
@@ -96,9 +97,17 @@ sub parse_feed {
 			/ix);
 
 			my $name = $1;
-
-			my $text = $c->getFirstChild->getData;
-
+			my $text;
+                        eval {
+                            $text = $c->getFirstChild->getData;
+                        };
+                        if ($@) {
+                            if ($name eq "description") {
+                                $text = "Empty Description!";
+                            } else {
+                                die "Unable to find contents in $name: $@"
+                            }
+                        }
 			# clean it up a bit
 			$text =~ s!(?:^\s+|\s+$)!!g;
 
@@ -174,13 +183,35 @@ sub handle_items {
 	{
 		my $c = 0;
 		foreach my $i (@$items) {
-#			warn "item date: $i->{created}\n";
-
-			my $date 
+                        $i->{created} =~ s/\s+EDT\s*$/ -0400/;
+                        $i->{created} =~ s/\s+EST\s*$/ -0500/;
+                        $i->{created} =~
+                  s/^\s*([SMTWF][a-z][a-z]\s*,)\s+(\w{3,3})\s+(\d+)/$1 $3 $2/;
+                        $i->{created} =~
+                  s/^\s*([SMTWF][a-z][a-z]\s*,)\s+(\w{3,3})\s+(\d+)/$1 $3 $2/;
+                        my $date;
+eval {
+			$date 
 				= DateTime::Format::HTTP->parse_datetime($i->{created});
 
+};
+  if ($@) {
+    use Date::Manip;
+    $date = ($i->{created} =~ /^\s*$/) ? ParseDate('today')
+                                       : ParseDate($i->{created});
+    if ($date eq "") {
+        # Ok, still having trouble and we have something in created.
+        # Sometimes they have brain-dead dates like: Sun 27 Oct 2007
+        # 2:53:17 PM, but the 27th wasn't a sunday.  Parse that up.
+
+        $i->{created} =~ s/^((Sun|Mon|Tue|Wed|Thu|Fri|Sat)([A-Za-z]*\s*,?)?\s+)(\d+)/$4/;
+        $date = ($i->{created} =~ /^\s*$/) ? ParseDate('today')
+            : ParseDate($i->{created});
+    }
+    $date = DateTime::Format::HTTP->parse_datetime(UnixDate($date, "%a, %d %b %Y %T %z"));
+  }
 #			print "date: " . $date->strftime("%Y/%m/%d") . "\n";
-			
+
 			if ($i->{enclosure} && $c < $f->{count}) {
 				if ( &download_audio($f,$i,$date) ) {
 					warn "onto current: " . &local_file_from_url($i) . "\n";
@@ -193,10 +224,10 @@ sub handle_items {
 				# no audio or we've reached our limit	
 			}
 		}
-
+                # sort them by date
 		# map curent files to filenames
 		my $files = {};
-		%$files = map { $_->[1] => 1 } @$current;
+		%$files = map { $_->[1] => 1 }  @$current;
 
 		# -- fill in missing current files -- #
 
@@ -219,9 +250,11 @@ sub handle_items {
 			# skip it if the file name's in current
 			next if ($files->{ $k->[1] });
 
-			my $lfile = $config->{local} . "/" . $k->[1];
+			my $lfile = $config->{local} . "/" . $f->{subdir} . '/' .
+                          $k->[1];
 			# if it's not, out it goes
 			warn "deleting $lfile\n";
+                        unlink($lfile) or warn "Unable to delete $lfile: $!";
 			#`rm $lfile`;
 		}
 	}
@@ -239,7 +272,8 @@ sub download_audio {
 
 	# -- split the filename off the url -- #
 
-	my $file = $config->{local} . "/" . &local_file_from_url($i);
+	my $file = $config->{local} . "/" . $f->{subdir} . '/' . 
+          &local_file_from_url($i);
 #	warn "file: $file\n";
 
 	# -- first make sure we don't already have the file -- #
@@ -248,13 +282,20 @@ sub download_audio {
 
 	# -- grab the file -- #
 
-	`wget -O $file $i->{enclosure}{url}`;
+	`wget -N -O $file $i->{enclosure}{url}`;
 
 	# -- change file info if desired -- #
 
-	my $mp3 = MP3::Mplib->new($file);
+#	my $mp3 = MP3::Mplib->new($file);
 
-	my $id3v2 = $mp3->get_v2tag();
+#	my $id3v2 = $mp3->get_v2tag();
+
+        if ($file =~ /\.ogg\s*$/) {
+        } else {
+          
+      system("/usr/bin/id3v2 -g 101 -y " .   $date->strftime("%Y") . 
+             " -T " . $date->strftime('%j') . 
+             " --TRDA " . $date->strftime('%Y-%m-%d') . " $file");
 
 	foreach my $key (['title','TIT2'],['artist','TPE1'],['album','TALB']) {
 		next if (!$f->{ $key->[0] });
@@ -264,11 +305,28 @@ sub download_audio {
 		$value =~ s!#T#!$i->{title}!i;
 		$value =~ s!#N#!$i->{name}!i;
 
-		$id3v2->{ $key->[1] } = $value;
+                $value =~ s!The\s+Circuit\s+(hosted\s+by.*\s+)?with(\s+Special\s+Guest)?\s+!!i
+;
+                if ($key->[0] eq 'artist') {
+                     system("/usr/bin/id3v2 -a \"$value\" $file");
+                     print DOWNLOAD_LIST "Artist: $value";
+                   } elsif ($key->[0] eq 'title') {
+                     system("/usr/bin/id3v2 -t \"$value\" $file");
+                     print DOWNLOAD_LIST "Title: $value";
+                   } elsif ($key->[0] eq 'album') {
+                     system("/usr/bin/id3v2 -A \"$value\" $file");
+                     print DOWNLOAD_LIST "Album: $value";
+                   } else {
+                     system("/usr/bin/id3v2 --" . $key->[1] . " $value");
+                     print DOWNLOAD_LIST "$key->[1]: $value";
+                   }
+
+#		$id3v2->{ $key->[1] } = $value;
 	}
+      print DOWNLOAD_LIST "\n\n";
 
-	$mp3->set_v2tag($id3v2);
-
+#	$mp3->set_v2tag($id3v2);
+    }
 	return 1;
 }
 
