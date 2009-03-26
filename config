@@ -258,14 +258,6 @@
         <album>%Y: Phil Ivey</album>
         <count>2</count>
       </feed>
-      <feed name="StackOverFlow">
-        <subdir>StackOverFlow</subdir>
-        <url>http://blog.stackoverflow.com/index.php?feed=podcast</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Stack Overflow</artist>
-        <album>%Y: Stackoverflow</album>
-        <count>2</count>
-      </feed>
 
 </config>
 
