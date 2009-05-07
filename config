@@ -26,11 +26,19 @@
          <title>%Y-%m-%d: #T#</title>
          <album>%Y: NPR Gambling</album>
       </feed>
-      <feed name="NPRNews1600">
-        <subdir>NPRNews1600</subdir>
-        <url>http://www.npr.org/rss/podcast.php?id=500003</url>
+      <feed name="NPRNews0700">
+        <subdir>NPRNews0700</subdir>
+        <url>http://www.npr.org/rss/podcast.php?id=500001</url>
         <album>%Y: NPR News Summaries</album>
-        <title>%Y-%m-%d 16:00: #T#</title>
+        <title>%Y-%m-%d 07:00: #T#</title>
+        <artist>NPR</artist>
+        <count>1</count>
+      </feed>
+      <feed name="NPRTech">
+        <subdir>NPRTech</subdir>
+        <url>http://www.npr.org/rss/podcast.php?id=1019</url>
+        <album>%Y: NPR Technology</album>
+        <title>%Y-%m-%d: #T#</title>
         <artist>NPR</artist>
         <count>1</count>
       </feed>
@@ -249,6 +257,14 @@
         <artist>Cash Plays</artist>
         <album>%Y: Cash Plays</album>
         <count>2</count>
+      </feed>
+      <feed name="LinuxKernel">
+        <subdir>LinuxKernel</subdir>
+        <url>http://podcasts.jonmasters.org/kernel/kernel.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Linux Kernel</artist>
+        <album>%Y: Linux Kernel</album>
+        <count>10</count>
       </feed>
       <feed name="PhilIvey">
         <subdir>PhilIvey</subdir>
