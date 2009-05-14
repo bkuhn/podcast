@@ -26,6 +26,22 @@
          <title>%Y-%m-%d: #T#</title>
          <album>%Y: NPR Gambling</album>
       </feed>
+      <feed name="HubbleUnfiltered">
+        <subdir>HubbleUnfiltered</subdir>
+        <url>http://hubblesite.org/explore_astronomy/hubbles_universe_unfiltered/rss.php?feed=quicktime-320</url>
+        <album>%Y: Hubble Unfiltered</album>
+        <title>%Y-%m-%d:  #T#</title>
+        <artist>HubbleUnfiltered</artist>
+        <count>1</count>
+      </feed>
+      <feed name="NASA">
+        <subdir>NASA</subdir>
+        <url>http://www.nasa.gov/rss/TWAN_podcast.rss</url>
+        <album>%Y: NASA</album>
+        <title>%Y-%m-%d:  #T#</title>
+        <artist>NASA</artist>
+        <count>1</count>
+      </feed>
       <feed name="NPRNews0700">
         <subdir>NPRNews0700</subdir>
         <url>http://www.npr.org/rss/podcast.php?id=500001</url>
@@ -50,6 +66,23 @@
         <album>%Y: LUG Radio</album>
         <count>1</count>
       </feed>
+	<feed name="NYTimesScience">
+		<url>http://nytimes.com/services/xml/rss/nyt/podcasts/sciencetimes.xml</url>
+		<count>2</count>
+            <subdir>NYTimesTechTalk</subdir>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: NYT Tech Talk</album>
+		<artist>NY Times: Tech Talk</artist>
+	</feed>
+	<feed name="NYTimesTechTalk">
+		<url>http://nytimes.com/services/xml/rss/nyt/podcasts/techtalk.xml</url>
+		<count>2</count>
+            <subdir>NYTimesTechTalk</subdir>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: NYT Tech Talk</album>
+		<artist>NY Times: Tech Talk</artist>
+	</feed>
+
 	<feed name="NY Times: Pogue on Technology">
 		<url>http://www.nytimes.com/services/xml/rss/nyt/podcasts/pogue.xml</url>
 		<count>2</count>
@@ -57,6 +90,15 @@
 		<title>%Y-%m-%d: #T#</title>
                 <album>%Y: Pogue on Technology</album>
 		<artist>NY Times: Pogue on Technology</artist>
+	</feed>
+
+	<feed name="IBMTechCenter">
+		<url>http://planet-ltc.org/podcasts/feed/</url>
+		<count>1</count>
+            <subdir>IBMTechCenter</subdir>
+                <artist>IBM Technology Center</artist>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: IBM Tech Center</album>
 	</feed>
 	<feed name="PerlCast">
 		<url>http://www.perlcast.com/rss/current.xml</url>
@@ -66,6 +108,33 @@
 		<title>%Y-%m-%d: #T#</title>
                 <album>%Y: Perl Cast</album>
 	</feed>
+
+	<feed name="Ubuntu">
+		<url>http://ubuntupodcast.net/feed/</url>
+		<count>1</count>
+            <subdir>Ubuntu</subdir>
+                <artist>Ubuntu Podcast</artist>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: Ubuntu Podcast</album>
+	</feed>
+	<feed name="Freenode">
+		<url>http://podcast.freenode.net/feed</url>
+		<count>1</count>
+            <subdir>Freenode</subdir>
+                <artist>Free As In Node</artist>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: Free As In Node</album>
+	</feed>
+
+	<feed name="EFF">
+		<url>http://www.eff.org/rss/podcast/mp3.xml</url>
+		<count>2</count>
+            <subdir>EFF</subdir>
+                <artist>EFF Podcast</artist>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: EFF Podcast</album>
+	</feed>
+
 	<feed name="AsteriskUser">
 		<url>http://feeds.feedburner.com/AstUser</url>
 		<count>2</count>
@@ -226,6 +295,14 @@
         <album>%Y: 2+2 PokerCast</album>
         <count>2</count>
       </feed>
+      <feed name="CNETDaily">
+        <subdir>CNETDaily</subdir>
+        <url>http://newsdailypodcast.cnet.com/</url> 
+        <title>%Y-%m-%d: #T#</title>
+        <artist>CNET Daily Podcast</artist>
+        <album>%Y: CNET Daily Podcast</album>
+        <count>1</count>
+      </feed>
       <feed name="TwistedShow">
         <subdir>TwistedShow</subdir>
         <url>http://feeds.feedburner.com/TheTwistedShow</url> 
@@ -264,7 +341,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Kernel</artist>
         <album>%Y: Linux Kernel</album>
-        <count>10</count>
+        <count>5</count>
       </feed>
       <feed name="PhilIvey">
         <subdir>PhilIvey</subdir>
