@@ -309,16 +309,16 @@ sub download_audio {
 ;
                 if ($key->[0] eq 'artist') {
                      system("/usr/bin/id3v2 -a \"$value\" $file");
-                     print DOWNLOAD_LIST "Artist: $value";
+                     print DOWNLOAD_LIST " Artist: $value";
                    } elsif ($key->[0] eq 'title') {
                      system("/usr/bin/id3v2 -t \"$value\" $file");
-                     print DOWNLOAD_LIST "Title: $value";
+                     print DOWNLOAD_LIST " Title: $value";
                    } elsif ($key->[0] eq 'album') {
                      system("/usr/bin/id3v2 -A \"$value\" $file");
-                     print DOWNLOAD_LIST "Album: $value";
+                     print DOWNLOAD_LIST " Album: $value";
                    } else {
                      system("/usr/bin/id3v2 --" . $key->[1] . " $value");
-                     print DOWNLOAD_LIST "$key->[1]: $value";
+                     print DOWNLOAD_LIST " $key->[1]: $value";
                    }
 
 #		$id3v2->{ $key->[1] } = $value;
