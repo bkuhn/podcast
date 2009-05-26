@@ -303,6 +303,11 @@
         <album>%Y: CNET Daily Podcast</album>
         <count>1</count>
       </feed>
+      <feed name="SFLC">
+        <subdir>SFLC</subdir>
+        <url>http://www.softwarefreedom.org/feeds/podcast-mp3/</url> 
+        <count>1</count>
+      </feed>
       <feed name="TwistedShow">
         <subdir>TwistedShow</subdir>
         <url>http://feeds.feedburner.com/TheTwistedShow</url> 
