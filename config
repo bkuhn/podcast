@@ -134,7 +134,6 @@
 		<title>%Y-%m-%d: #T#</title>
                 <album>%Y: EFF Podcast</album>
 	</feed>
-
 	<feed name="AsteriskUser">
 		<url>http://feeds.feedburner.com/AstUser</url>
 		<count>2</count>
@@ -150,14 +149,6 @@
         <artist>This American Life</artist>
         <album>%Y: This American Life</album>
         <count>5000</count>
-      </feed>
-      <feed name="LinuxLinkTechShow">
-        <subdir>LinuxLinkTech</subdir>
-        <url>http://feeds.feedburner.com/TheLinuxLinkTechShowMp3Feed</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Linux Link Tech Show</artist>
-        <album>%Y: Linux Link Tech Show</album>
-        <count>1</count>
       </feed>
       <feed name="LinuxQuestionsPodcast">
         <subdir>LinuxQuestions</subdir>
@@ -308,6 +299,32 @@
         <url>http://www.softwarefreedom.org/feeds/podcast-mp3/</url> 
         <count>1</count>
       </feed>
+
+      <feed name="President">
+        <subdir>PresidentRadioAddress</subdir>
+        <url>http://www.whitehouse.gov/rss/speechesaudio.xml</url> 
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Presidential Speeches</artist>
+        <album>%Y: Presidential Speeches</album>
+        <count>2</count>
+      </feed>
+      <feed name="WhiteHousePress">
+        <subdir>WhiteHousePress</subdir>
+        <url>http://www.whitehouse.gov/rss/Briefings_audio.xml</url> 
+        <title>%Y-%m-%d: #T#</title>
+        <artist>White House Press Briefings</artist>
+        <album>%Y: White House Press Briefings</album>
+        <count>2</count>
+      </feed>
+      <feed name="WhiteHouseSpeeches">
+        <subdir>WhiteHouseSpeeches</subdir>
+        <url>http://www.whitehouse.gov/rss/remarks_audio.xml</url> 
+        <title>%Y-%m-%d: #T#</title>
+        <artist>White House Speeches</artist>
+        <album>%Y: White House Speeches</album>
+        <count>2</count>
+      </feed>
+
       <feed name="TwistedShow">
         <subdir>TwistedShow</subdir>
         <url>http://feeds.feedburner.com/TheTwistedShow</url> 
