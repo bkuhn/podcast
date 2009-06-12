@@ -316,14 +316,6 @@
         <album>%Y: White House Press Briefings</album>
         <count>2</count>
       </feed>
-      <feed name="WhiteHouseSpeeches">
-        <subdir>WhiteHouseSpeeches</subdir>
-        <url>http://www.whitehouse.gov/rss/remarks_audio.xml</url> 
-        <title>%Y-%m-%d: #T#</title>
-        <artist>White House Speeches</artist>
-        <album>%Y: White House Speeches</album>
-        <count>2</count>
-      </feed>
 
       <feed name="TwistedShow">
         <subdir>TwistedShow</subdir>
