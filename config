@@ -119,7 +119,7 @@
 	</feed>
 	<feed name="Freenode">
 		<url>http://podcast.freenode.net/feed</url>
-		<count>1</count>
+		<count>2</count>
             <subdir>Freenode</subdir>
                 <artist>Free As In Node</artist>
 		<title>%Y-%m-%d: #T#</title>
