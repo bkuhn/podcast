@@ -109,14 +109,6 @@
                 <album>%Y: Perl Cast</album>
 	</feed>
 
-	<feed name="Ubuntu">
-		<url>http://ubuntupodcast.net/feed/</url>
-		<count>1</count>
-            <subdir>Ubuntu</subdir>
-                <artist>Ubuntu Podcast</artist>
-		<title>%Y-%m-%d: #T#</title>
-                <album>%Y: Ubuntu Podcast</album>
-	</feed>
 	<feed name="Freenode">
 		<url>http://podcast.freenode.net/feed</url>
 		<count>2</count>
@@ -355,7 +347,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Kernel</artist>
         <album>%Y: Linux Kernel</album>
-        <count>5</count>
+        <count>7</count>
       </feed>
       <feed name="PhilIvey">
         <subdir>PhilIvey</subdir>
