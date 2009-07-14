@@ -174,46 +174,6 @@
         <album>%Y: FLOSS Weekly</album>
         <count>2</count>
       </feed>
-      <feed name="PokerRoad">
-        <subdir>PokerRoad</subdir>
-        <url>http://www.pokerroad.com/pokerroad_radio/rss.xml</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Poker Road Radio</artist>
-        <album>%Y: Poker Road Radio</album>
-        <count>6</count>
-      </feed>
-      <feed name="BearPokerTips">
-        <subdir>BearPokerTips</subdir>
-        <url>http://www.pokerroad.com/tips_from_the_bear/rss.xml</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Barry Greenstein</artist>
-        <album>%Y: Tips from the Bear</album>
-        <count>2</count>
-      </feed>
-      <feed name="BigPokerSunday">
-        <subdir>BigPokerSunday</subdir>
-        <url>http://www.pokerroad.com/big_poker_sundays/rss.xml</url>
-        <title>%Y-%m-%d: Big Poker Sunday: #T#</title>
-        <artist>Big Poker Sundays</artist>
-        <album>%Y: Big Poker Sundays</album>
-        <count>2</count>
-      </feed>
-      <feed name="AllStrategy">
-        <subdir>PokerAllStrategy</subdir>
-        <url>http://www.pokerroad.com/all_strategy/rss.xml</url>
-        <title>%Y-%m-%d: All Strategy: #T#</title>
-        <artist>All Strategy</artist>
-        <album>%Y: All Strategy</album>
-        <count>2</count>
-      </feed>
-      <feed name="BearBlog">
-        <subdir>BearBlog</subdir>
-        <url>http://www.pokerroad.com/the_bear_blog/rss.xml</url>
-        <title>%Y-%m-%d: Bear Blog: #T#</title>
-        <artist>Bear Blog</artist>
-        <album>%Y: Bear Blog</album>
-        <count>2</count>
-      </feed>
       <feed name="SourceTrunk">
         <subdir>SourceTrunk</subdir>
         <url>http://feeds.feedburner.com/sourcetrunk</url>
@@ -333,6 +293,14 @@
         <album>%Y: Linux Foundation</album>
         <count>2</count>
       </feed>
+      <feed name="LinuxKernel">
+        <subdir>LinuxKernel</subdir>
+        <url>http://podcasts.jonmasters.org/kernel/kernel.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Linux Kernel</artist>
+        <album>%Y: Linux Kernel</album>
+        <count>7</count>
+      </feed>
       <feed name="CashPlays">
         <subdir>CashPlays</subdir>
         <url>http://www.pokerroad.com/cash_plays/rss.xml</url>
@@ -341,13 +309,45 @@
         <album>%Y: Cash Plays</album>
         <count>2</count>
       </feed>
-      <feed name="LinuxKernel">
-        <subdir>LinuxKernel</subdir>
-        <url>http://podcasts.jonmasters.org/kernel/kernel.xml</url>
+      <feed name="BigPokerSunday">
+        <subdir>BigPokerSunday</subdir>
+        <url>http://www.pokerroad.com/big_poker_sundays/rss.xml</url>
+        <title>%Y-%m-%d: Big Poker Sunday: #T#</title>
+        <artist>Big Poker Sundays</artist>
+        <album>%Y: Big Poker Sundays</album>
+        <count>2</count>
+      </feed>
+      <feed name="AllStrategy">
+        <subdir>PokerAllStrategy</subdir>
+        <url>http://www.pokerroad.com/all_strategy/rss.xml</url>
+        <title>%Y-%m-%d: All Strategy: #T#</title>
+        <artist>All Strategy</artist>
+        <album>%Y: All Strategy</album>
+        <count>2</count>
+      </feed>
+      <feed name="PokerRoad">
+        <subdir>PokerRoad</subdir>
+        <url>http://www.pokerroad.com/pokerroad_radio/rss.xml</url>
         <title>%Y-%m-%d: #T#</title>
-        <artist>Linux Kernel</artist>
-        <album>%Y: Linux Kernel</album>
-        <count>7</count>
+        <artist>Poker Road Radio</artist>
+        <album>%Y: Poker Road Radio</album>
+        <count>6</count>
+      </feed>
+      <feed name="BearPokerTips">
+        <subdir>BearPokerTips</subdir>
+        <url>http://www.pokerroad.com/tips_from_the_bear/rss.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Barry Greenstein</artist>
+        <album>%Y: Tips from the Bear</album>
+        <count>2</count>
+      </feed>
+      <feed name="BearBlog">
+        <subdir>BearBlog</subdir>
+        <url>http://www.pokerroad.com/the_bear_blog/rss.xml</url>
+        <title>%Y-%m-%d: Bear Blog: #T#</title>
+        <artist>Bear Blog</artist>
+        <album>%Y: Bear Blog</album>
+        <count>2</count>
       </feed>
       <feed name="PhilIvey">
         <subdir>PhilIvey</subdir>
