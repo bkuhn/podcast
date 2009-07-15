@@ -74,7 +74,6 @@ sub parse_feed {
 	my ($f,$rss) = @_;
 
 	my $content = $rss->content;
-        print $content;
 
 	my $xml = $parser->parse($rss->content,ProtocolEncoding=>"ISO-8859-1");
 
