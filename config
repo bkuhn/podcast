@@ -83,15 +83,6 @@
 		<artist>NY Times: Tech Talk</artist>
 	</feed>
 
-	<feed name="NY Times: Pogue on Technology">
-		<url>http://www.nytimes.com/services/xml/rss/nyt/podcasts/pogue.xml</url>
-		<count>2</count>
-            <subdir>NYTimes</subdir>
-		<title>%Y-%m-%d: #T#</title>
-                <album>%Y: Pogue on Technology</album>
-		<artist>NY Times: Pogue on Technology</artist>
-	</feed>
-
 	<feed name="IBMTechCenter">
 		<url>http://planet-ltc.org/podcasts/feed/</url>
 		<count>1</count>
@@ -302,5 +293,62 @@
         <count>12</count>
       </feed>
 
+
+      <feed name="CashPlays">
+        <subdir>CashPlays</subdir>
+        <url>http://www.pokerroad.com/cash_plays/rss.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Cash Plays</artist>
+        <album>%Y: Cash Plays</album>
+        <count>2</count>
+      </feed>
+      <feed name="BigPokerSunday">
+        <subdir>BigPokerSunday</subdir>
+        <url>http://www.pokerroad.com/big_poker_sundays/rss.xml</url>
+        <title>%Y-%m-%d: Big Poker Sunday: #T#</title>
+        <artist>Big Poker Sundays</artist>
+        <album>%Y: Big Poker Sundays</album>
+        <count>2</count>
+      </feed>
+      <feed name="AllStrategy">
+        <subdir>PokerAllStrategy</subdir>
+        <url>http://www.pokerroad.com/all_strategy/rss.xml</url>
+        <title>%Y-%m-%d: All Strategy: #T#</title>
+        <artist>All Strategy</artist>
+        <album>%Y: All Strategy</album>
+        <count>2</count>
+      </feed>
+      <feed name="PokerRoad">
+        <subdir>PokerRoad</subdir>
+        <url>http://www.pokerroad.com/pokerroad_radio/rss.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Poker Road Radio</artist>
+        <album>%Y: Poker Road Radio</album>
+        <count>6</count>
+      </feed>
+      <feed name="BearPokerTips">
+        <subdir>BearPokerTips</subdir>
+        <url>http://www.pokerroad.com/tips_from_the_bear/rss.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Barry Greenstein</artist>
+        <album>%Y: Tips from the Bear</album>
+        <count>2</count>
+      </feed>
+      <feed name="BearBlog">
+        <subdir>BearBlog</subdir>
+        <url>http://www.pokerroad.com/the_bear_blog/rss.xml</url>
+        <title>%Y-%m-%d: Bear Blog: #T#</title>
+        <artist>Bear Blog</artist>
+        <album>%Y: Bear Blog</album>
+        <count>2</count>
+      </feed>
+      <feed name="PhilIvey">
+        <subdir>PhilIvey</subdir>
+        <url>http://www.pokerroad.com/tuesdays_with_ivey/rss.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Phil Ivey</artist>
+        <album>%Y: Phil Ivey</album>
+        <count>2</count>
+      </feed>
 </config>
 
