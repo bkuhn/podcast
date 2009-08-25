@@ -26,14 +26,6 @@
          <title>%Y-%m-%d: #T#</title>
          <album>%Y: NPR Gambling</album>
       </feed>
-      <feed name="HubbleUnfiltered">
-        <subdir>HubbleUnfiltered</subdir>
-        <url>http://hubblesite.org/explore_astronomy/hubbles_universe_unfiltered/rss.php?feed=quicktime-320</url>
-        <album>%Y: Hubble Unfiltered</album>
-        <title>%Y-%m-%d:  #T#</title>
-        <artist>HubbleUnfiltered</artist>
-        <count>1</count>
-      </feed>
       <feed name="NASA">
         <subdir>NASA</subdir>
         <url>http://www.nasa.gov/rss/TWAN_podcast.rss</url>
