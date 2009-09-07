@@ -75,14 +75,6 @@
 		<artist>NY Times: Tech Talk</artist>
 	</feed>
 
-	<feed name="IBMTechCenter">
-		<url>http://planet-ltc.org/podcasts/feed/</url>
-		<count>1</count>
-            <subdir>IBMTechCenter</subdir>
-                <artist>IBM Technology Center</artist>
-		<title>%Y-%m-%d: #T#</title>
-                <album>%Y: IBM Tech Center</album>
-	</feed>
 	<feed name="PerlCast">
 		<url>http://www.perlcast.com/rss/current.xml</url>
 		<count>2</count>
