@@ -125,14 +125,6 @@
         <album>%Y: Linux Questions Podcast</album>
         <count>2</count>
       </feed>
-      <feed name="LinuxAction">
-        <subdir>LinuxAction</subdir>
-        <url>http://feeds2.feedburner.com/TheLinuxActionShow</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Linux Action Show</artist>
-        <album>%Y: Linux Action Show</album>
-        <count>2</count>
-      </feed>
       <feed name="BSDTalk">
         <subdir>BSDTalk</subdir>
         <url>http://feeds.feedburner.com/Bsdtalk</url>
