@@ -75,15 +75,6 @@
 		<artist>NY Times: Tech Talk</artist>
 	</feed>
 
-	<feed name="PerlCast">
-		<url>http://www.perlcast.com/rss/current.xml</url>
-		<count>2</count>
-            <subdir>PerlCast</subdir>
-                <artist>Perl Cast</artist>
-		<title>%Y-%m-%d: #T#</title>
-                <album>%Y: Perl Cast</album>
-	</feed>
-
 	<feed name="Freenode">
 		<url>http://podcast.freenode.net/feed</url>
 		<count>2</count>
