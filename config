@@ -92,14 +92,6 @@
 		<title>%Y-%m-%d: #T#</title>
                 <album>%Y: EFF Podcast</album>
 	</feed>
-	<feed name="AsteriskUser">
-		<url>http://feeds.feedburner.com/AstUser</url>
-		<count>2</count>
-            <subdir>AsteriskUser</subdir>
-		<title>%Y-%m-%d: #T#</title>
-                <artist>Asterisk User Podcast</artist>
-                <album>%Y: AsteriskUser</album>
-	</feed>
       <feed name="ThisAmericanLife">
         <subdir>ThisAmericanLife</subdir>
         <url>http://feeds.thisamericanlife.org/talpodcast</url>
