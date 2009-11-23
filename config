@@ -100,6 +100,16 @@
         <album>%Y: This American Life</album>
         <count>5000</count>
       </feed>
+
+      <feed name="Zonker">
+        <subdir>LinuxQuestions</subdir>
+        <url>http://www.networkworld.com/podcasts/openmic/index.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Zonker Open Mic</artist>
+        <album>%Y: Zonker Open Mic</album>
+        <count>4</count>
+      </feed>
+
       <feed name="LinuxQuestionsPodcast">
         <subdir>LinuxQuestions</subdir>
         <url>http://feeds.feedburner.com/linuxquestions/LQPodcast</url>
