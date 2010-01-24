@@ -18,21 +18,13 @@
             <album>%Y: Wait, Wait... Don't Tell Me</album>
             <artist>Wait, Wait ... Don't Tell Me</artist>
 	</feed>
-      <feed name="NPRGambling">
-        <subdir>NPRGambling</subdir>
-         <url>http://www.npr.org/rss/podcast.php?id=510020</url>
-         <count>1</count>
-         <artist>Mike Pesca</artist>
-         <title>%Y-%m-%d: #T#</title>
-         <album>%Y: NPR Gambling</album>
-      </feed>
       <feed name="NASA">
         <subdir>NASA</subdir>
         <url>http://www.nasa.gov/rss/TWAN_podcast.rss</url>
         <album>%Y: NASA</album>
         <title>%Y-%m-%d:  #T#</title>
         <artist>NASA</artist>
-        <count>1</count>
+        <count>200</count>
       </feed>
       <feed name="NPRNews0700">
         <subdir>NPRNews0700</subdir>
@@ -40,7 +32,7 @@
         <album>%Y: NPR News Summaries</album>
         <title>%Y-%m-%d 07:00: #T#</title>
         <artist>NPR</artist>
-        <count>1</count>
+        <count>200</count>
       </feed>
       <feed name="NPRTech">
         <subdir>NPRTech</subdir>
@@ -48,7 +40,7 @@
         <album>%Y: NPR Technology</album>
         <title>%Y-%m-%d: #T#</title>
         <artist>NPR</artist>
-        <count>1</count>
+        <count>200</count>
       </feed>
       <feed name="LUGRadio">
         <subdir>LUG</subdir>
@@ -60,7 +52,7 @@
       </feed>
 	<feed name="NYTimesScience">
 		<url>http://nytimes.com/services/xml/rss/nyt/podcasts/sciencetimes.xml</url>
-		<count>2</count>
+		<count>200</count>
             <subdir>NYTimesTechTalk</subdir>
 		<title>%Y-%m-%d: #T#</title>
                 <album>%Y: NYT Tech Talk</album>
@@ -68,7 +60,7 @@
 	</feed>
 	<feed name="NYTimesTechTalk">
 		<url>http://nytimes.com/services/xml/rss/nyt/podcasts/techtalk.xml</url>
-		<count>2</count>
+		<count>200</count>
             <subdir>NYTimesTechTalk</subdir>
 		<title>%Y-%m-%d: #T#</title>
                 <album>%Y: NYT Tech Talk</album>
@@ -77,7 +69,7 @@
 
 	<feed name="Freenode">
 		<url>http://podcast.freenode.net/feed</url>
-		<count>2</count>
+		<count>200</count>
             <subdir>Freenode</subdir>
                 <artist>Free As In Node</artist>
 		<title>%Y-%m-%d: #T#</title>
@@ -85,8 +77,8 @@
 	</feed>
 
 	<feed name="EFF">
-		<url>http://www.eff.org/rss/podcast/mp3.xml</url>
-		<count>2</count>
+		<url>http://www.eff.org/rss/podcast/ogg.xml</url>
+		<count>200</count>
             <subdir>EFF</subdir>
                 <artist>EFF Podcast</artist>
 		<title>%Y-%m-%d: #T#</title>
@@ -107,80 +99,32 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Zonker Open Mic</artist>
         <album>%Y: Zonker Open Mic</album>
-        <count>4</count>
+        <count>200</count>
       </feed>
 
-      <feed name="LinuxQuestionsPodcast">
-        <subdir>LinuxQuestions</subdir>
-        <url>http://feeds.feedburner.com/linuxquestions/LQPodcast</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Linux Questions Podcast</artist>
-        <album>%Y: Linux Questions Podcast</album>
-        <count>2</count>
-      </feed>
       <feed name="BSDTalk">
         <subdir>BSDTalk</subdir>
-        <url>http://feeds.feedburner.com/Bsdtalk</url>
+        <url>http://www2.madphilosopher.ca/bsdtalk_ogg.xml</url>
         <title>%Y-%m-%d: #T#</title>
         <artist>BSD Talk</artist>
         <album>%Y: BSD Talk</album>
-        <count>2</count>
+        <count>200</count>
       </feed>
       <feed name="FLOSSWeekly">
         <subdir>FLOSSWeekly</subdir>
-        <url>http://leoville.tv/podcasts/floss.xml</url>
+        <url>http://kamiware.org/floss_ogg.xml</url>
         <title>%Y-%m-%d: #T#</title>
         <artist>FLOSS Weekly</artist>
         <album>%Y: FLOSS Weekly</album>
-        <count>2</count>
-      </feed>
-      <feed name="SourceTrunk">
-        <subdir>SourceTrunk</subdir>
-        <url>http://feeds.feedburner.com/sourcetrunk</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Source Trunk</artist>
-        <album>%Y: Source Trunk</album>
-        <count>2</count>
-      </feed>
-      <feed name="OpenNews">
-        <subdir>OpenNews</subdir>
-        <url>http://www.opennewsshow.org/mp3.xml</url> 
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Open News</artist>
-        <album>%Y: Open News</album>
-        <count>2</count>
+        <count>200</count>
       </feed>
       <feed name="LinuxOutlaws">
         <subdir>LinuxOutlaws</subdir>
-        <url>http://feeds.feedburner.com/linuxoutlaws</url> 
+        <url>http://feeds.feedburner.com/linuxoutlaws-ogg</url> 
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Outlaws</artist>
         <album>%Y: Linux Outlaws</album>
-        <count>2</count>
-      </feed>
-      <feed name="FutureTense">
-        <subdir>FutureTense</subdir>
-        <url>http://www.npr.org/rss/podcast.php?id=510014</url> 
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Future Tense</artist>
-        <album>%Y: Future Tense</album>
-        <count>2</count>
-      </feed>
-      <feed name="NetworkSecurity">
-        <subdir>NetworkSecurity</subdir>
-        <url>http://mckeay.libsyn.com/rss</url> 
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Network Security</artist>
-        <album>%Y: Network Security</album>
-        <count>2</count>
-      </feed>
-      <feed name="LinuxReality">
-        <subdir>LinuxReality</subdir>
-        <url>http://feeds.feedburner.com/linuxreality-mp3</url> 
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Linux Reality</artist>
-        <album>%Y: Linux Reality</album>
-        <count>1</count>
+        <count>200</count>
       </feed>
       <feed name="ThisWeekInDjango">
         <subdir>ThisWeekInDjango</subdir>
@@ -188,7 +132,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>This Week In Django</artist>
         <album>%Y: This Week in Django</album>
-        <count>2</count>
+        <count>200</count>
       </feed>
       <feed name="TwoPlusTwoPokerCast">
         <subdir>TwoPlusTwoPokerCast</subdir>
@@ -196,7 +140,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>2+2 PokerCast</artist>
         <album>%Y: 2+2 PokerCast</album>
-        <count>2</count>
+        <count>200</count>
       </feed>
       <feed name="CNETDaily">
         <subdir>CNETDaily</subdir>
@@ -204,29 +148,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>CNET Daily Podcast</artist>
         <album>%Y: CNET Daily Podcast</album>
-        <count>1</count>
-      </feed>
-      <feed name="SFLC">
-        <subdir>SFLC</subdir>
-        <url>http://www.softwarefreedom.org/feeds/podcast-mp3/</url> 
-        <count>1</count>
-      </feed>
-
-      <feed name="President">
-        <subdir>PresidentRadioAddress</subdir>
-        <url>http://www.whitehouse.gov/rss/speechesaudio.xml</url> 
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Presidential Speeches</artist>
-        <album>%Y: Presidential Speeches</album>
-        <count>2</count>
-      </feed>
-      <feed name="WhiteHousePress">
-        <subdir>WhiteHousePress</subdir>
-        <url>http://www.whitehouse.gov/rss/Briefings_audio.xml</url> 
-        <title>%Y-%m-%d: #T#</title>
-        <artist>White House Press Briefings</artist>
-        <album>%Y: White House Press Briefings</album>
-        <count>2</count>
+        <count>200</count>
       </feed>
 
       <feed name="TwistedShow">
@@ -243,7 +165,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Software Engineering Radio</artist>
         <album>%Y: Software Engineering Radio</album>
-        <count>2</count>
+        <count>200</count>
       </feed>
       <feed name="LinuxFoundation">
         <subdir>LinuxFoundation</subdir>
@@ -251,7 +173,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Foundation</artist>
         <album>%Y: Linux Foundation</album>
-        <count>2</count>
+        <count>200</count>
       </feed>
       <feed name="LinuxKernel">
         <subdir>LinuxKernel</subdir>
@@ -259,33 +181,15 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Kernel</artist>
         <album>%Y: Linux Kernel</album>
-        <count>12</count>
+        <count>1200</count>
       </feed>
-
-
       <feed name="CashPlays">
         <subdir>CashPlays</subdir>
         <url>http://www.pokerroad.com/cash_plays/rss.xml</url>
         <title>%Y-%m-%d: #T#</title>
         <artist>Cash Plays</artist>
         <album>%Y: Cash Plays</album>
-        <count>2</count>
-      </feed>
-      <feed name="BigPokerSunday">
-        <subdir>BigPokerSunday</subdir>
-        <url>http://www.pokerroad.com/big_poker_sundays/rss.xml</url>
-        <title>%Y-%m-%d: Big Poker Sunday: #T#</title>
-        <artist>Big Poker Sundays</artist>
-        <album>%Y: Big Poker Sundays</album>
-        <count>2</count>
-      </feed>
-      <feed name="AllStrategy">
-        <subdir>PokerAllStrategy</subdir>
-        <url>http://www.pokerroad.com/all_strategy/rss.xml</url>
-        <title>%Y-%m-%d: All Strategy: #T#</title>
-        <artist>All Strategy</artist>
-        <album>%Y: All Strategy</album>
-        <count>2</count>
+        <count>200</count>
       </feed>
       <feed name="PokerRoad">
         <subdir>PokerRoad</subdir>
@@ -293,7 +197,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Poker Road Radio</artist>
         <album>%Y: Poker Road Radio</album>
-        <count>6</count>
+        <count>200</count>
       </feed>
       <feed name="BearPokerTips">
         <subdir>BearPokerTips</subdir>
@@ -301,7 +205,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Barry Greenstein</artist>
         <album>%Y: Tips from the Bear</album>
-        <count>2</count>
+        <count>200</count>
       </feed>
       <feed name="BearBlog">
         <subdir>BearBlog</subdir>
@@ -309,7 +213,7 @@
         <title>%Y-%m-%d: Bear Blog: #T#</title>
         <artist>Bear Blog</artist>
         <album>%Y: Bear Blog</album>
-        <count>2</count>
+        <count>200</count>
       </feed>
       <feed name="PhilIvey">
         <subdir>PhilIvey</subdir>
@@ -317,7 +221,17 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Phil Ivey</artist>
         <album>%Y: Phil Ivey</album>
-        <count>2</count>
+        <count>200</count>
       </feed>
+      <feed name="PhilIvey">
+        <subdir>PhilIvey</subdir>
+        <url>http://www.pokerroad.com/radio/rss/the-poker-beat</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Poker Beat</artist>
+        <album>%Y: Poker Beat</album>
+        <count>200</count>
+      </feed>
+
+
 </config>
 
