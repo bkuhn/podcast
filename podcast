@@ -1,5 +1,6 @@
 #!/usr/bin/perl
 
+my $OGG_QUALITY = 6;
 #use XML::RAI;
 use XML::DOM;
 use XML::Simple;
@@ -11,7 +12,7 @@ use Cache::File;
 use DateTime;
 use DateTime::Format::HTTP;
 
-use MP3::Mplib;
+#use MP3::Mplib;
 
 use Storable;
 
@@ -24,6 +25,7 @@ $cfg = {
 
 #----------
 open(DOWNLOAD_LIST, ">>downloaded.list") or die "unable to open downloadedlist: $!";
+open(NEW_LIST, ">>new.m3u") or die "unable to open new.m3u: $!";
 {
 	$parser = new XML::DOM::Parser;
 #	$parser = new XML::RSS::Parser;
@@ -268,68 +270,88 @@ eval {
 #----------
 
 sub download_audio {
-	my ($f,$i,$date) = @_;
+  my ($f,$i,$date) = @_;
 
-	# -- split the filename off the url -- #
+  # -- split the filename off the url -- #
 
-	my $file = $config->{local} . "/" . $f->{subdir} . '/' . 
-          &local_file_from_url($i);
-#	warn "file: $file\n";
+  my $file = $config->{local} . "/" . $f->{subdir} . '/' .
+             &local_file_from_url($i);
 
-	# -- first make sure we don't already have the file -- #
+  my $oggFile = $file;
+  $oggFile =~ s/mp3$/ogg/;
 
-	return 1 if (-e $file);
+  # -- first make sure we don't already have the file -- #
+  return 1 if (-e $file or -e $oggFile);
 
-	# -- grab the file -- #
+  # -- grab the file -- #
+  `wget -N -O $file $i->{enclosure}{url}`;
+  # -- change file info if desired -- #
 
-	`wget -N -O $file $i->{enclosure}{url}`;
+  my %info;
+  $info{DATE} = $date->strftime('%Y-%m-%d');
+  $info{GENRE} = "Podcast";
+  if ($file !~ /ogg$/) {
+    system("mpg321 $file -w - | oggenc -q $OGG_QUALITY -o $newFile -");
+    die "Unable to mp3->ogg on $file to $newFile" unless ($? == 0);
+    open(ID_MP3, "/usr/bin/id3v2 -l $file|") or die "unable to run: /usr/bin/id3v2 -l $file";
+    my %mp3Data;
+    while (my $line = <ID_MP3>) {
+      chomp $line;
+      if ($line =~ /^(TRCK|TIT2|TPE1|TALB|TRDA)[^:]*\s*:\s*(.+$)/) {
+        $mp3Data{$1} = $2;
+      }
+    }
+    close ID_MP3;
+    my %map = (TITLE => 'TIT2', ARTIST => 'TPE1', ALBUM => 'TALB',
+               TRACKNUMBER => 'TRCK', DATE => 'TRDA');
+    foreach my $key (keys %map) {
+      $info{$key} = $mp3Data{$map{$key}}
+        if ( (not defined $info{$key}) and defined $mp3Data{$map{$key}});
+    }
+    die "Unable to remove $file now that $oggFile is made" unless unlink($file) == 1;
+    $file = $oggFile;
+  } else {
+    open(VORBIS_COMMENTS, "/usr/bin/vorbiscomment -l $file|") or
+      die "unable to run: /usr/bin/vorbiscomment -l $file";
+    while (my $line = <VORBIS_COMMENTS>) {
+      chomp $line;
+      die "Weird vorbis line: $line" unless $line =~ /^\s*(\S+)\s*=\s*(.+)$/;
+      $info{$1} = $2;
+    }
+    close VORBIS_COMMENTS;
+  }
 
-	# -- change file info if desired -- #
-
-#	my $mp3 = MP3::Mplib->new($file);
-
-#	my $id3v2 = $mp3->get_v2tag();
-
-        if ($file =~ /\.ogg\s*$/) {
-        } else {
-          
-      system("/usr/bin/id3v2 -g 101 -y " .   $date->strftime("%Y") . 
-             " -T " . $date->strftime('%j') . 
-             " --TRDA " . $date->strftime('%Y-%m-%d') . " $file");
-
-	foreach my $key (['title','TIT2'],['artist','TPE1'],['album','TALB']) {
-		next if (!$f->{ $key->[0] });
-
-		my $value = $date->strftime($f->{ $key->[0] });
-		
-		$value =~ s!#T#!$i->{title}!i;
-		$value =~ s!#N#!$i->{name}!i;
-
-                $value =~ s!The\s+Circuit\s+(hosted\s+by.*\s+)?with(\s+Special\s+Guest)?\s+!!i
-;
-                if ($key->[0] eq 'artist') {
-                     system("/usr/bin/id3v2 -a \"$value\" $file");
-                     print DOWNLOAD_LIST " Artist: $value";
-                   } elsif ($key->[0] eq 'title') {
-                     system("/usr/bin/id3v2 -t \"$value\" $file");
-                     print DOWNLOAD_LIST " Title: $value";
-                   } elsif ($key->[0] eq 'album') {
-                     system("/usr/bin/id3v2 -A \"$value\" $file");
-                     print DOWNLOAD_LIST " Album: $value";
-                   } else {
-                     system("/usr/bin/id3v2 --" . $key->[1] . " $value");
-                     print DOWNLOAD_LIST " $key->[1]: $value";
-                   }
-
-#		$id3v2->{ $key->[1] } = $value;
-	}
-      print DOWNLOAD_LIST "\n\n";
+  $androidFile = $file;
+  $androidFile =~ s%^.+/([^/]+)%$1%;
+  my $newFileName = $config->{local} . "/" . $f->{subdir} . '/' . $info{DATE};
+  $newFileName . = "_" . $info{TRACKNUMBER} if defined $info{TRACKNUMBER};
+  $newFileName . = "_" .  $f->{subdir} . $androidFile;
+  rename($file, $newFileName) or die "Unable to rename $file to $newFileName: $!";
+  $file = $newFileName;
+  print NEW_LIST "$androidFile\n";
+  print DOWNLOAD_LIST " File: $file";
+  open(VORBIS_CHANGE,  "|/usr/bin/vorbiscomment -w $file") or
+    die "unable to /usr/bin/vorbiscomment -w $file: $!";
+  foreach my $key (keys %info) {
+    if (defined $f->{"\L$key\E"} and $key =~ /TITLE|ARTIST|ALBUM/) {
+      my $value = $date->strftime($f->{"\L$key\E"});
+      $value =~ s!#T#!$info{TITLE}!i if defined $info{TITLE};
+      $value =~ s!#N#!$info{TRACKNUMBER}!i if defined $info{TRACKNUMBER};
+            $info{$key} = $value;
+          }
+        }
+       foreach my $key (keys %{$f}) {
+         $info{"\U$key\E"} = $f->{$key} unless defined $info{"\U$key\E"};
+       }
+       foreach my $key (keys %info) {
+         print VORBIS_CHANGE $key, '=', $info{$key}, "\n";
+       }
+       close VORBIS_CHANGE;
+        print DOWNLOAD_LIST "\n\n";
 
 #	$mp3->set_v2tag($id3v2);
-    }
 	return 1;
 }
-
 #----------
 
 sub local_file_from_url {
