@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-my $OGG_QUALITY = 6;
+my $OGG_QUALITY = 5;
 #use XML::RAI;
 use XML::DOM;
 use XML::Simple;
@@ -269,8 +269,22 @@ eval {
 
 #----------
 
+sub buildFileNames {
+  my ($file, $f, $date) = @_;
+  my $androidFile = $file;
+  $androidFile =~ s%^.+/([^/]+)%$1%;
+  $androidFile = $date . "_" . $f->{subdir} ."_". $androidFile;
+  my $newFileName = $config->{local} . "/" . $f->{subdir} . '/' . $androidFile;
+#  $newFileName .= "_" . $info{TRACKNUMBER} if defined $info{TRACKNUMBER};
+  return ($androidFile, $newFileName);
+}
+
 sub download_audio {
   my ($f,$i,$date) = @_;
+
+  my %info;
+  $info{DATE} = $date->strftime('%Y-%m-%d');
+  $info{GENRE} = "Podcast";
 
   # -- split the filename off the url -- #
 
@@ -280,17 +294,19 @@ sub download_audio {
   my $oggFile = $file;
   $oggFile =~ s/mp3$/ogg/;
 
-  # -- first make sure we don't already have the file -- #
-  return 1 if (-e $file or -e $oggFile);
+  my ($testAndroidFileName, $testNewFileName) = buildFileNames($oggFile, $f, $info{DATE});
 
+  # -- first make sure we don't already have the file -- #
+  return 1 if (-e $file or -e $oggFile or -e $testNewFileName or -e $testAndroidFileName
+              or -e "/home/bkuhn/Files/Audio/Portable/Listened/$testAndroidFileName");
+  print "$file, $oggFile, $testAndroidFileName, and $testNewFileName and /home/bkuhn/Files/Audio/Portable/Listened/$testAndroidFileName all didn't exist\n";
   # -- grab the file -- #
   `wget -N -O $file $i->{enclosure}{url}`;
   # -- change file info if desired -- #
 
-  my %info;
-  $info{DATE} = $date->strftime('%Y-%m-%d');
-  $info{GENRE} = "Podcast";
   if ($file !~ /ogg$/) {
+    my $newFile = $file;
+    $newFile =~ s/mp3$/ogg/;
     system("mpg321 $file -w - | oggenc -q $OGG_QUALITY -o $newFile -");
     die "Unable to mp3->ogg on $file to $newFile" unless ($? == 0);
     open(ID_MP3, "/usr/bin/id3v2 -l $file|") or die "unable to run: /usr/bin/id3v2 -l $file";
@@ -321,11 +337,7 @@ sub download_audio {
     close VORBIS_COMMENTS;
   }
 
-  $androidFile = $file;
-  $androidFile =~ s%^.+/([^/]+)%$1%;
-  my $newFileName = $config->{local} . "/" . $f->{subdir} . '/' . $info{DATE};
-  $newFileName . = "_" . $info{TRACKNUMBER} if defined $info{TRACKNUMBER};
-  $newFileName . = "_" .  $f->{subdir} . $androidFile;
+  my ($androidFile, $newFileName) = buildFileNames($file, $f, $info{DATE});
   rename($file, $newFileName) or die "Unable to rename $file to $newFileName: $!";
   $file = $newFileName;
   print NEW_LIST "$androidFile\n";
