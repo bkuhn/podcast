@@ -1,0 +1,16 @@
+      <feed name="StanfordCIS">
+        <subdir>Stanford</subdir>
+        <url>http://cyberlaw.stanford.edu/podcasts/podcast_rss.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Stanford Center for Internet and Society</artist>
+        <album>%Y: Stanford CIS</album>
+        <count>5</count>
+      </feed>
+      <feed name="OTR">
+        <subdir>OTR</subdir>
+        <url>http://otrpodcast.libsyn.com/rss</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Old Time Radio</artist>
+        <album>%Y: OTR</album>
+        <count>50</count>
+      </feed>
