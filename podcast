@@ -47,7 +47,7 @@ use strict;
 use vars qw( $cfg $config $args $parser $cache );
 
 $cfg = {
-	config	=> "/home/bkuhn/Files/Audio/Programs/podcast-0.1/config",
+	config	=> "/home/bkuhn/Files/Audio/Programs/podcast/config",
 };
 
 #----------
