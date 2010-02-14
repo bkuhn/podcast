@@ -213,7 +213,7 @@
         <title>%Y-%m-%d: Bear Blog: #T#</title>
         <artist>Bear Blog</artist>
         <album>%Y: Bear Blog</album>
-        <count>200</count>
+        <count>10</count>
       </feed>
       <feed name="PhilIvey">
         <subdir>PhilIvey</subdir>
