@@ -1,11 +1,11 @@
 # -- podcast README -- #
 
-Included in this tar file:
+This program is licensed GPLv3-or-later.
+
+Included:
 
 * podcast: the app
 * config: an example config file
-* cache/: an empty cache directory
-* audio/: an empty audio directory
 
 Start by opening up podcast and changing $cfg->{config} to have the correct 
 path to the config file.
@@ -17,3 +17,27 @@ could be elsewhere if you feel so-inclined.
 
 Input the information for the feeds you're interested in, following the model 
 in the included entries.
+
+
+Additional notes added by Bradley M. Kuhn <bkuhn@ebb.org>:
+
+  I downloaded this script at some point in 2006 and have been maintaining
+  a personal fork of it ever since.  Note that I've hard-coded a number of
+  paths in both the podcast script and the config file, and have also
+  added all my podcasts to the default config file.
+
+  I removed the use of the MP3lib stuff, as I now make system() calls out
+  to id3v2.
+
+  Finally, I finally just stopped listening to mp3 files when I got a
+  player that only supported ogg.  So, I added a feature to convert
+  everything to ogg files, and uses vorbiscomment and mpg321 to convert
+  the file to ogg.
+
+  I doubt this is useful to anyone.  People have asked me on occasion what
+  I use to download pocasts, so I put this code up here.  I actually
+  recommend bashpodder instead.  I'd use it myself if I hadn't been using
+  this code since before bashpodder existed.  The best I can say about
+  this code is IWFM.
+
+  -- bkuhn, 2010-02-14
