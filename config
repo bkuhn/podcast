@@ -19,7 +19,7 @@
             <artist>Wait, Wait ... Don't Tell Me</artist>
 	</feed>
       <feed name="NASA">
-        <subdir>NASA</subdir>
+        <subdir>nasa</subdir>
         <url>http://www.nasa.gov/rss/TWAN_podcast.rss</url>
         <album>%Y: NASA</album>
         <title>%Y-%m-%d:  #T#</title>
@@ -79,7 +79,7 @@
 	<feed name="EFF">
 		<url>http://www.eff.org/rss/podcast/ogg.xml</url>
 		<count>200</count>
-            <subdir>EFF</subdir>
+            <subdir>eff</subdir>
                 <artist>EFF Podcast</artist>
 		<title>%Y-%m-%d: #T#</title>
                 <album>%Y: EFF Podcast</album>
@@ -108,11 +108,11 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>BSD Talk</artist>
         <album>%Y: BSD Talk</album>
-        <count>200</count>
+        <count>2</count>
       </feed>
       <feed name="FLOSSWeekly">
         <subdir>FLOSSWeekly</subdir>
-        <url>http://kamiware.org/floss_ogg.xml</url>
+        <url>http://leoville.tv/podcasts/floss.xml</url>
         <title>%Y-%m-%d: #T#</title>
         <artist>FLOSS Weekly</artist>
         <album>%Y: FLOSS Weekly</album>
@@ -132,7 +132,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>This Week In Django</artist>
         <album>%Y: This Week in Django</album>
-        <count>200</count>
+        <count>7</count>
       </feed>
       <feed name="TwoPlusTwoPokerCast">
         <subdir>TwoPlusTwoPokerCast</subdir>
@@ -165,7 +165,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Software Engineering Radio</artist>
         <album>%Y: Software Engineering Radio</album>
-        <count>200</count>
+        <count>7</count>
       </feed>
       <feed name="LinuxFoundation">
         <subdir>LinuxFoundation</subdir>
@@ -181,7 +181,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Linux Kernel</artist>
         <album>%Y: Linux Kernel</album>
-        <count>1200</count>
+        <count>50</count>
       </feed>
       <feed name="CashPlays">
         <subdir>CashPlays</subdir>
@@ -189,7 +189,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Cash Plays</artist>
         <album>%Y: Cash Plays</album>
-        <count>200</count>
+        <count>15</count>
       </feed>
       <feed name="PokerRoad">
         <subdir>PokerRoad</subdir>
@@ -197,7 +197,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Poker Road Radio</artist>
         <album>%Y: Poker Road Radio</album>
-        <count>200</count>
+        <count>20</count>
       </feed>
       <feed name="BearPokerTips">
         <subdir>BearPokerTips</subdir>
@@ -221,15 +221,15 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Phil Ivey</artist>
         <album>%Y: Phil Ivey</album>
-        <count>200</count>
+        <count>1</count>
       </feed>
-      <feed name="PhilIvey">
-        <subdir>PhilIvey</subdir>
+      <feed name="PokerBeat">
+        <subdir>PokerBeat</subdir>
         <url>http://www.pokerroad.com/radio/rss/the-poker-beat</url>
         <title>%Y-%m-%d: #T#</title>
         <artist>Poker Beat</artist>
         <album>%Y: Poker Beat</album>
-        <count>200</count>
+        <count>7</count>
       </feed>
 
 
