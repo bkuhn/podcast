@@ -140,7 +140,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>2+2 PokerCast</artist>
         <album>%Y: 2+2 PokerCast</album>
-        <count>200</count>
+        <count>25</count>
       </feed>
       <feed name="CNETDaily">
         <subdir>CNETDaily</subdir>
@@ -214,14 +214,6 @@
         <artist>Bear Blog</artist>
         <album>%Y: Bear Blog</album>
         <count>10</count>
-      </feed>
-      <feed name="PhilIvey">
-        <subdir>PhilIvey</subdir>
-        <url>http://www.pokerroad.com/tuesdays_with_ivey/rss.xml</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Phil Ivey</artist>
-        <album>%Y: Phil Ivey</album>
-        <count>1</count>
       </feed>
       <feed name="PokerBeat">
         <subdir>PokerBeat</subdir>
