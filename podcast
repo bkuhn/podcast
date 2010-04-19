@@ -340,7 +340,7 @@ sub download_audio {
     my %mp3Data;
     while (my $line = <ID_MP3>) {
       chomp $line;
-      if ($line =~ /^(TRCK|TIT2|TPE1|TALB|TRDA)[^:]*\s*:\s*(.+$)/) {
+      if ($line =~ /^(TRCK|TIT2|TT2|TPE1|TALB|TRDA)[^:]*\s*:\s*(.+$)/) {
         $mp3Data{$1} = $2;
       }
     }
@@ -350,6 +350,13 @@ sub download_audio {
     foreach my $key (keys %map) {
       $info{$key} = $mp3Data{$map{$key}}
         if ( (not defined $info{$key}) and defined $mp3Data{$map{$key}});
+      print "hoping to setting $key using $map{$key} by $mp3Data{$map{$key}}\n";
+    }
+    my %map2 = (TITLE => 'TT2', ARTIST => 'TP1', ALBUM => 'TAL', DATE => 'TYE');
+    foreach my $key (keys %map2) {
+      $info{$key} = $mp3Data{$map2{$key}}
+        if ( ( (not defined $info{$key}) or $info{$key} =~ /^\s*$/) and defined $mp3Data{$map2{$key}});
+      print "hoping to setting $key using $map2{$key} by $mp3Data{$map2{$key}}\n";
     }
     die "Unable to remove $file now that $oggFile is made" unless unlink($file) == 1;
     $file = $oggFile;
@@ -359,7 +366,7 @@ sub download_audio {
     while (my $line = <VORBIS_COMMENTS>) {
       chomp $line;
       die "Weird vorbis line: $line" unless $line =~ /^\s*(\S+)\s*=\s*(.+)$/;
-      $info{$1} = $2;
+      $info{$1} = $2 unless defined $info{$1};
     }
     close VORBIS_COMMENTS;
   }
@@ -371,25 +378,29 @@ sub download_audio {
   print DOWNLOAD_LIST " File: $file";
   open(VORBIS_CHANGE,  "|/usr/bin/vorbiscomment -w $file") or
     die "unable to /usr/bin/vorbiscomment -w $file: $!";
-  foreach my $key (keys %info) {
-    if (defined $f->{"\L$key\E"} and $key =~ /TITLE|ARTIST|ALBUM/) {
+  use Data::Dumper;
+  print "info IS", Data::Dumper->Dump([\%info]);
+  print "F IS", Data::Dumper->Dump([$f]);
+  $info{TITLE} = $info{DATE} unless defined $info{TITLE};
+  foreach my $key (keys %{$f}) {
+    $info{"\U$key\E"} = $f->{$key} unless defined $info{"\U$key\E"};
+  }
+  foreach my $key ('TITLE', 'ARTIST', 'ALBUM') {
+    if (defined $f->{"\L$key\E"}) {
       my $value = $date->strftime($f->{"\L$key\E"});
       $value =~ s!#T#!$info{TITLE}!i if defined $info{TITLE};
       $value =~ s!#N#!$info{TRACKNUMBER}!i if defined $info{TRACKNUMBER};
-            $info{$key} = $value;
-          }
-        }
-       foreach my $key (keys %{$f}) {
-         $info{"\U$key\E"} = $f->{$key} unless defined $info{"\U$key\E"};
-       }
-       foreach my $key (keys %info) {
-         print VORBIS_CHANGE $key, '=', $info{$key}, "\n";
-       }
-       close VORBIS_CHANGE;
-        print DOWNLOAD_LIST "\n\n";
+      $info{$key} = $value;
+    }
+  }
+  foreach my $key (keys %info) {
+    print VORBIS_CHANGE $key, '=', $info{$key}, "\n";
+  }
+  close VORBIS_CHANGE;
+  print DOWNLOAD_LIST "\n\n";
 
 #	$mp3->set_v2tag($id3v2);
-	return 1;
+  return 1;
 }
 #----------
 
@@ -398,6 +409,7 @@ sub local_file_from_url {
 
 	my ($file) = $i->{enclosure}{url} =~ m!.*/([^/]+)$!;
 
+        $file =~ s/\s+/-/g;
 	return $file;
 }
 
