@@ -185,7 +185,7 @@
       </feed>
       <feed name="CashPlays">
         <subdir>CashPlays</subdir>
-        <url>http://www.pokerroad.com/cash_plays/rss.xml</url>
+        <url>http://feeds.feedburner.com/cash-plays?format=xml</url>
         <title>%Y-%m-%d: #T#</title>
         <artist>Cash Plays</artist>
         <album>%Y: Cash Plays</album>
@@ -193,7 +193,7 @@
       </feed>
       <feed name="PokerRoad">
         <subdir>PokerRoad</subdir>
-        <url>http://www.pokerroad.com/pokerroad_radio/rss.xml</url>
+        <url>http://feeds.feedburner.com/prr?format=xml</url>
         <title>%Y-%m-%d: #T#</title>
         <artist>Poker Road Radio</artist>
         <album>%Y: Poker Road Radio</album>
@@ -201,7 +201,7 @@
       </feed>
       <feed name="BearPokerTips">
         <subdir>BearPokerTips</subdir>
-        <url>http://www.pokerroad.com/tips_from_the_bear/rss.xml</url>
+        <url>http://feeds.feedburner.com/tips-from-the-bear?format=xml</url>
         <title>%Y-%m-%d: #T#</title>
         <artist>Barry Greenstein</artist>
         <album>%Y: Tips from the Bear</album>
@@ -209,7 +209,7 @@
       </feed>
       <feed name="BearBlog">
         <subdir>BearBlog</subdir>
-        <url>http://www.pokerroad.com/the_bear_blog/rss.xml</url>
+        <url>http://feeds.feedburner.com/bear-blog?format=xml</url>
         <title>%Y-%m-%d: Bear Blog: #T#</title>
         <artist>Bear Blog</artist>
         <album>%Y: Bear Blog</album>
@@ -217,7 +217,7 @@
       </feed>
       <feed name="PokerBeat">
         <subdir>PokerBeat</subdir>
-        <url>http://www.pokerroad.com/radio/rss/the-poker-beat</url>
+        <url>http://feeds.feedburner.com/the-poker-beat?format=xml</url>
         <title>%Y-%m-%d: #T#</title>
         <artist>Poker Beat</artist>
         <album>%Y: Poker Beat</album>
