@@ -189,7 +189,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Cash Plays</artist>
         <album>%Y: Cash Plays</album>
-        <count>15</count>
+        <count>3</count>
       </feed>
       <feed name="PokerRoad">
         <subdir>PokerRoad</subdir>
@@ -197,7 +197,7 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Poker Road Radio</artist>
         <album>%Y: Poker Road Radio</album>
-        <count>20</count>
+        <count>3</count>
       </feed>
       <feed name="BearPokerTips">
         <subdir>BearPokerTips</subdir>
@@ -221,9 +221,28 @@
         <title>%Y-%m-%d: #T#</title>
         <artist>Poker Beat</artist>
         <album>%Y: Poker Beat</album>
-        <count>7</count>
+        <count>3</count>
+      </feed>
+      <feed name="jQuery">
+        <subdir>jQuery</subdir>
+        <url>http://feeds.feedburner.com/jQueryPodcast?format=xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>jQuery</artist>
+        <album>%Y: jQuery</album>
+        <count>3</count>
+      </feed>
+      <feed name="cmdline">
+        <subdir>cmdline</subdir>
+        <url>http://feeds.thecommandline.net/cmdln</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>cmdline</artist>
+        <album>%Y: cmdline</album>
+        <count>3</count>
       </feed>
 
 
 </config>
+
+
+
 
