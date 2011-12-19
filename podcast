@@ -328,13 +328,15 @@ sub download_audio {
               or -e "/home/bkuhn/Files/Audio/Portable/Listened/$testAndroidFileName");
   print "$file, $oggFile, $testAndroidFileName, and $testNewFileName and /home/bkuhn/Files/Audio/Portable/Listened/$testAndroidFileName all didn't exist\n";
   # -- grab the file -- #
-  `wget -N -O $file $i->{enclosure}{url}`;
+  system("/usr/bin/wget -N -O $file $i->{enclosure}{url}");
+  die "wget failure: $!" unless ($? == 0);
   # -- change file info if desired -- #
 
   if ($file !~ /ogg$/) {
     my $newFile = $file;
     $newFile =~ s/mp3$/ogg/;
-    system("mpg321 $file -w - | oggenc -q $OGG_QUALITY -o $newFile -");
+#    system("mpg321 $file -w - | oggenc -q $OGG_QUALITY -o $newFile -");
+    system("/usr/bin/sox $file $newFile");
     die "Unable to mp3->ogg on $file to $newFile" unless ($? == 0);
     open(ID_MP3, "/usr/bin/id3v2 -l $file|") or die "unable to run: /usr/bin/id3v2 -l $file";
     my %mp3Data;
@@ -365,7 +367,7 @@ sub download_audio {
       die "unable to run: /usr/bin/vorbiscomment -l $file";
     while (my $line = <VORBIS_COMMENTS>) {
       chomp $line;
-      die "Weird vorbis line: $line" unless $line =~ /^\s*(\S+)\s*=\s*(.+)$/;
+      die "Weird vorbis line: $line" unless $line =~ /^\s*([^=]*)\s*=\s*(.+)$/;
       $info{$1} = $2 unless defined $info{$1};
     }
     close VORBIS_COMMENTS;
