@@ -317,6 +317,7 @@ sub download_audio {
 
   my $file = $config->{local} . "/" . $f->{subdir} . '/' .
              &local_file_from_url($i);
+  $file =~ s/\.MP3$/.mp3/;
 
   my $oggFile = $file;
   $oggFile =~ s/mp3$/ogg/;
