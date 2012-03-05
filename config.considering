@@ -1,3 +1,30 @@
+      <feed name="BSDTalk">
+        <subdir>BSDTalk</subdir>
+        <url>http://www2.madphilosopher.ca/bsdtalk_ogg.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>BSD Talk</artist>
+        <album>%Y: BSD Talk</album>
+        <count>2</count>
+      </feed>
+
+	<feed name="EFF">
+		<url>http://www.eff.org/rss/podcast/ogg.xml</url>
+		<count>200</count>
+            <subdir>eff</subdir>
+                <artist>EFF Podcast</artist>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: EFF Podcast</album>
+	</feed>
+
+	<feed name="Freenode">
+		<url>http://podcast.freenode.net/feed</url>
+		<count>200</count>
+            <subdir>Freenode</subdir>
+                <artist>Free As In Node</artist>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: Free As In Node</album>
+	</feed>
+
       <feed name="StanfordCIS">
         <subdir>Stanford</subdir>
         <url>http://cyberlaw.stanford.edu/podcasts/podcast_rss.xml</url>
@@ -13,4 +40,80 @@
         <artist>Old Time Radio</artist>
         <album>%Y: OTR</album>
         <count>50</count>
+      </feed>
+
+      <feed name="cmdline">
+        <subdir>cmdline</subdir>
+        <url>http://feeds.thecommandline.net/cmdln</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>cmdline</artist>
+        <album>%Y: cmdline</album>
+        <count>3</count>
+      </feed>
+      <feed name="wickedchops">
+        <subdir>WickedChops</subdir>
+        <url>http://wickedchopspoker.com/tag/podcast/feed/</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Wicked Chops Poker</artist>
+        <album>%Y: Wicked Chops Poker</album>
+        <count>3</count>
+      </feed>
+      <feed name="NASA">
+        <subdir>nasa</subdir>
+        <url>http://www.nasa.gov/rss/TWAN_podcast.rss</url>
+        <album>%Y: NASA</album>
+        <title>%Y-%m-%d:  #T#</title>
+        <artist>NASA</artist>
+        <count>200</count>
+      </feed>
+      <feed name="BearBlog">
+        <subdir>BearBlog</subdir>
+        <url>http://feeds.feedburner.com/bear-blog?format=xml</url>
+        <title>%Y-%m-%d: Bear Blog: #T#</title>
+        <artist>Bear Blog</artist>
+        <album>%Y: Bear Blog</album>
+        <count>10</count>
+      </feed>
+      <feed name="German">
+        <subdir>German</subdir>
+        <url>http://feeds.feedburner.com/pukkagerman</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Pukka German Language Practice</artist>
+        <album>%Y: Pukka German</album>
+        <count>40</count>
+      </feed>
+      <feed name="debian">
+        <subdir>Debian</subdir>
+        <url>http://www.frostbitemedia.libsyn.com/rss/twid.ogg</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Debian, This Week</artist>
+        <album>%Y: This Week In Debian</album>
+        <count>3</count>
+      </feed>
+      <feed name="LinuxFoundation">
+        <subdir>LinuxFoundation</subdir>
+        <url>http://linux-foundation.org/weblogs/openvoices/?feed=podcast</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Linux Foundation</artist>
+        <album>%Y: Linux Foundation</album>
+        <count>200</count>
+      </feed>
+
+
+
+      <feed name="dueceplays">
+        <subdir>DuecePlays</subdir>
+        <url>http://www.deucescracked.com/podcasts/deuceplays/podcast.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Duece Plays</artist>
+        <album>%Y: Duece Plays</album>
+        <count>3</count>
+      </feed>
+      <feed name="LUGRadio">
+        <subdir>LUG</subdir>
+        <url>http://www.lugradio.org/episodes.rss</url>
+        <title>%Y-%m-%d: LUGRadio: #T#</title>
+        <artist>LUG</artist>
+        <album>%Y: LUG Radio</album>
+        <count>1</count>
       </feed>
