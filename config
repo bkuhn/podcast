@@ -18,12 +18,12 @@
             <album>%Y: Wait, Wait... Don't Tell Me</album>
             <artist>Wait, Wait ... Don't Tell Me</artist>
 	</feed>
-      <feed name="NASA">
-        <subdir>nasa</subdir>
-        <url>http://www.nasa.gov/rss/TWAN_podcast.rss</url>
-        <album>%Y: NASA</album>
-        <title>%Y-%m-%d:  #T#</title>
-        <artist>NASA</artist>
+      <feed name="LinuxOutlaws">
+        <subdir>LinuxOutlaws</subdir>
+        <url>http://feeds.feedburner.com/linuxoutlaws-ogg</url> 
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Linux Outlaws</artist>
+        <album>%Y: Linux Outlaws</album>
         <count>200</count>
       </feed>
       <feed name="NPRNews0700">
@@ -42,14 +42,6 @@
         <artist>NPR</artist>
         <count>200</count>
       </feed>
-      <feed name="LUGRadio">
-        <subdir>LUG</subdir>
-        <url>http://www.lugradio.org/episodes.rss</url>
-        <title>%Y-%m-%d: LUGRadio: #T#</title>
-        <artist>LUG</artist>
-        <album>%Y: LUG Radio</album>
-        <count>1</count>
-      </feed>
 	<feed name="NYTimesScience">
 		<url>http://nytimes.com/services/xml/rss/nyt/podcasts/sciencetimes.xml</url>
 		<count>200</count>
@@ -67,23 +59,6 @@
 		<artist>NY Times: Tech Talk</artist>
 	</feed>
 
-	<feed name="Freenode">
-		<url>http://podcast.freenode.net/feed</url>
-		<count>200</count>
-            <subdir>Freenode</subdir>
-                <artist>Free As In Node</artist>
-		<title>%Y-%m-%d: #T#</title>
-                <album>%Y: Free As In Node</album>
-	</feed>
-
-	<feed name="EFF">
-		<url>http://www.eff.org/rss/podcast/ogg.xml</url>
-		<count>200</count>
-            <subdir>eff</subdir>
-                <artist>EFF Podcast</artist>
-		<title>%Y-%m-%d: #T#</title>
-                <album>%Y: EFF Podcast</album>
-	</feed>
       <feed name="ThisAmericanLife">
         <subdir>ThisAmericanLife</subdir>
         <url>http://feeds.thisamericanlife.org/talpodcast</url>
@@ -101,29 +76,12 @@
         <album>%Y: Zonker Open Mic</album>
         <count>200</count>
       </feed>
-
-      <feed name="BSDTalk">
-        <subdir>BSDTalk</subdir>
-        <url>http://www2.madphilosopher.ca/bsdtalk_ogg.xml</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>BSD Talk</artist>
-        <album>%Y: BSD Talk</album>
-        <count>2</count>
-      </feed>
       <feed name="FLOSSWeekly">
         <subdir>FLOSSWeekly</subdir>
         <url>http://leoville.tv/podcasts/floss.xml</url>
         <title>%Y-%m-%d: #T#</title>
         <artist>FLOSS Weekly</artist>
         <album>%Y: FLOSS Weekly</album>
-        <count>200</count>
-      </feed>
-      <feed name="LinuxOutlaws">
-        <subdir>LinuxOutlaws</subdir>
-        <url>http://feeds.feedburner.com/linuxoutlaws-ogg</url> 
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Linux Outlaws</artist>
-        <album>%Y: Linux Outlaws</album>
         <count>200</count>
       </feed>
       <feed name="ThisWeekInDjango">
@@ -167,14 +125,6 @@
         <album>%Y: Software Engineering Radio</album>
         <count>7</count>
       </feed>
-      <feed name="LinuxFoundation">
-        <subdir>LinuxFoundation</subdir>
-        <url>http://linux-foundation.org/weblogs/openvoices/?feed=podcast</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Linux Foundation</artist>
-        <album>%Y: Linux Foundation</album>
-        <count>200</count>
-      </feed>
       <feed name="LinuxKernel">
         <subdir>LinuxKernel</subdir>
         <url>http://podcasts.jonmasters.org/kernel/kernel.xml</url>
@@ -207,14 +157,6 @@
         <album>%Y: Tips from the Bear</album>
         <count>200</count>
       </feed>
-      <feed name="BearBlog">
-        <subdir>BearBlog</subdir>
-        <url>http://feeds.feedburner.com/bear-blog?format=xml</url>
-        <title>%Y-%m-%d: Bear Blog: #T#</title>
-        <artist>Bear Blog</artist>
-        <album>%Y: Bear Blog</album>
-        <count>10</count>
-      </feed>
       <feed name="PokerBeat">
         <subdir>PokerBeat</subdir>
         <url>http://feeds.feedburner.com/the-poker-beat?format=xml</url>
@@ -231,18 +173,33 @@
         <album>%Y: jQuery</album>
         <count>3</count>
       </feed>
-      <feed name="cmdline">
-        <subdir>cmdline</subdir>
-        <url>http://feeds.thecommandline.net/cmdln</url>
+      <feed name="Rantofabkuhn">
+        <subdir>Rantofabkuhn</subdir>
+        <url>http://feeds.feedburner.com/rantofabkuhn-ogg</url>
         <title>%Y-%m-%d: #T#</title>
-        <artist>cmdline</artist>
-        <album>%Y: cmdline</album>
-        <count>3</count>
+        <artist>Rantofabkuhn</artist>
+        <album>%Y: Rantofabbkuhn</album>
+        <count>40</count>
+      </feed>
+      <feed name="NotesInSpanishIntermediate">
+        <subdir>NotesInSpanishIntermediate</subdir>
+        <url>http://intnotesinspanish.libsyn.com/rss</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>NotesInSpanish Intermediate</artist>
+        <album>%Y: NotesInSpanish Intermediate</album>
+        <count>40</count>
+      </feed>
+      <feed name="NotesInSpanishAdvanced">
+        <subdir>NotesInSpanishAdvanced</subdir>
+        <url>http://intnotesinspanish.libsyn.com/rss</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>NotesInSpanish Advanced</artist>
+        <album>%Y: NotesInSpanish Advanced</album>
+        <count>40</count>
       </feed>
 
 
+
 </config>
-
-
 
 
