@@ -1,11 +1,4 @@
-      <feed name="BSDTalk">
-        <subdir>BSDTalk</subdir>
-        <url>http://www2.madphilosopher.ca/bsdtalk_ogg.xml</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>BSD Talk</artist>
-        <album>%Y: BSD Talk</album>
-        <count>2</count>
-      </feed>
+http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2509922
 
 	<feed name="EFF">
 		<url>http://www.eff.org/rss/podcast/ogg.xml</url>
@@ -25,14 +18,6 @@
                 <album>%Y: Free As In Node</album>
 	</feed>
 
-      <feed name="StanfordCIS">
-        <subdir>Stanford</subdir>
-        <url>http://cyberlaw.stanford.edu/podcasts/podcast_rss.xml</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Stanford Center for Internet and Society</artist>
-        <album>%Y: Stanford CIS</album>
-        <count>5</count>
-      </feed>
       <feed name="OTR">
         <subdir>OTR</subdir>
         <url>http://otrpodcast.libsyn.com/rss</url>
@@ -116,4 +101,12 @@
         <artist>LUG</artist>
         <album>%Y: LUG Radio</album>
         <count>1</count>
+      </feed>
+      <feed name="ThisWeekInDjango">
+        <subdir>ThisWeekInDjango</subdir>
+        <url>http://media.djangonetcasts.com/twid_mp3.xml</url> 
+        <title>%Y-%m-%d: #T#</title>
+        <artist>This Week In Django</artist>
+        <album>%Y: This Week in Django</album>
+        <count>7</count>
       </feed>
