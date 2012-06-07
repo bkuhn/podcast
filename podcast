@@ -238,7 +238,6 @@ sub handle_items {
                           $date = ParseDate('today');
                         }
                         $date = DateTime::Format::HTTP->parse_datetime(UnixDate($date, "%a, %d %b %Y %T %z"));
-			print "date is now: " . $date->strftime("%Y/%m/%d") . "\n";
 
 			if ($i->{enclosure} && $c < $f->{count}) {
 				if ( &download_audio($f,$i,$date) ) {
@@ -318,7 +317,7 @@ sub download_audio {
              &local_file_from_url($i);
   $file =~ s/\.MP3$/.mp3/;
 
-  return if $file =~ /\.m4v$/;   # Ignore m4v files.
+  return if $file =~ /\.m4(v|a)$/;   # Ignore m4v or m4a files.
 
   my $oggFile = $file;
   $oggFile =~ s/mp3$/ogg/;
@@ -327,7 +326,8 @@ sub download_audio {
 
   # -- first make sure we don't already have the file -- #
   return 1 if (-e $file or -e $oggFile or -e $testNewFileName or -e $testAndroidFileName
-              or -e "/home/bkuhn/Files/Audio/Portable/Listened/$testAndroidFileName");
+              or -e "/home/bkuhn/Files/Audio/Portable/Listened/$testAndroidFileName"
+              or -e "/home/bkuhn/Files/Audio/Portable/Saving/$testAndroidFileName");
   print "$file, $oggFile, $testAndroidFileName, and $testNewFileName and /home/bkuhn/Files/Audio/Portable/Listened/$testAndroidFileName all didn't exist\n";
   # -- grab the file -- #
   system("/usr/bin/wget -N -O $file $i->{enclosure}{url}");
