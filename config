@@ -54,7 +54,7 @@
 
 	<feed name="RadioLab">        
 		<url>http://feeds.wnyc.org/radiolab</url>
-		<coufnt>30</count>
+		<count>100</count>
             <subdir>RadioLab</subdir>
 		<title>%Y-%m-%d: #T#</title>
                 <album>%Y: RadioLab</album>
