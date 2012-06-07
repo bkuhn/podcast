@@ -318,6 +318,8 @@ sub download_audio {
              &local_file_from_url($i);
   $file =~ s/\.MP3$/.mp3/;
 
+  return if $file =~ /\.m4v$/;   # Ignore m4v files.
+
   my $oggFile = $file;
   $oggFile =~ s/mp3$/ogg/;
 
