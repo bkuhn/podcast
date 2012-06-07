@@ -42,6 +42,32 @@
         <artist>NPR</artist>
         <count>200</count>
       </feed>
+
+	<feed name="WashingtonWeek">        
+		<url>http://feeds.pbs.org/pbs/weta/washingtonweek-audio</url>
+		<count>200</count>
+            <subdir>WashingtonWeek</subdir>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: Washington Week</album>
+		<artist>Washington Week</artist>
+	</feed>
+
+	<feed name="RadioLab">        
+		<url>http://feeds.wnyc.org/radiolab</url>
+		<coufnt>30</count>
+            <subdir>RadioLab</subdir>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: RadioLab</album>
+		<artist>RadioLab</artist>
+	</feed>
+	<feed name="PlanetMoney">        
+		<url>http://www.npr.org/rss/podcast.php?id=510289</url>
+		<count>200</count>
+            <subdir>PlanetMoney</subdir>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: Planet Money</album>
+		<artist>Planet Money</artist>
+	</feed>
 	<feed name="NYTimesScience">
 		<url>http://nytimes.com/services/xml/rss/nyt/podcasts/sciencetimes.xml</url>
 		<count>200</count>
@@ -83,14 +109,6 @@
         <artist>FLOSS Weekly</artist>
         <album>%Y: FLOSS Weekly</album>
         <count>200</count>
-      </feed>
-      <feed name="ThisWeekInDjango">
-        <subdir>ThisWeekInDjango</subdir>
-        <url>http://media.djangonetcasts.com/twid_mp3.xml</url> 
-        <title>%Y-%m-%d: #T#</title>
-        <artist>This Week In Django</artist>
-        <album>%Y: This Week in Django</album>
-        <count>7</count>
       </feed>
       <feed name="TwoPlusTwoPokerCast">
         <subdir>TwoPlusTwoPokerCast</subdir>
@@ -198,6 +216,39 @@
         <count>40</count>
       </feed>
 
+
+      <feed name="BSDTalk">
+        <subdir>BSDTalk</subdir>
+        <url>http://www2.madphilosopher.ca/bsdtalk_ogg.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>BSD Talk</artist>
+        <album>%Y: BSD Talk</album>
+        <count>2</count>
+      </feed>
+      <feed name="StanfordCIS">
+        <subdir>Stanford</subdir>
+        <url>http://cyberlaw.stanford.edu/podcasts/podcast_rss.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Stanford Center for Internet and Society</artist>
+        <album>%Y: Stanford CIS</album>
+        <count>5</count>
+      </feed>
+      <feed name="PocketFives">
+        <subdir>PocketFives</subdir>
+        <url>http://www.pocketfives.com/podcasts/index.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Pocket Fives Podcast</artist>
+        <album>%Y: Pocket Fives</album>
+        <count>5</count>
+      </feed>
+      <feed name="AnteUp">
+        <subdir>AnteUp</subdir>
+        <url>http://www.anteupmagazine.com/itunesxml.php</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Ante Up</artist>
+        <album>%Y: Ante Up</album>
+        <count>5</count>
+      </feed>
 
 
 </config>
