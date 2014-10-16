@@ -54,7 +54,7 @@
 
 	<feed name="RadioLab">        
 		<url>http://feeds.wnyc.org/radiolab</url>
-		<count>100</count>
+		<count>51</count>
             <subdir>RadioLab</subdir>
 		<title>%Y-%m-%d: #T#</title>
                 <album>%Y: RadioLab</album>
@@ -62,27 +62,11 @@
 	</feed>
 	<feed name="PlanetMoney">        
 		<url>http://www.npr.org/rss/podcast.php?id=510289</url>
-		<count>200</count>
+		<count>50</count>
             <subdir>PlanetMoney</subdir>
 		<title>%Y-%m-%d: #T#</title>
                 <album>%Y: Planet Money</album>
 		<artist>Planet Money</artist>
-	</feed>
-	<feed name="NYTimesScience">
-		<url>http://nytimes.com/services/xml/rss/nyt/podcasts/sciencetimes.xml</url>
-		<count>200</count>
-            <subdir>NYTimesTechTalk</subdir>
-		<title>%Y-%m-%d: #T#</title>
-                <album>%Y: NYT Tech Talk</album>
-		<artist>NY Times: Tech Talk</artist>
-	</feed>
-	<feed name="NYTimesTechTalk">
-		<url>http://nytimes.com/services/xml/rss/nyt/podcasts/techtalk.xml</url>
-		<count>200</count>
-            <subdir>NYTimesTechTalk</subdir>
-		<title>%Y-%m-%d: #T#</title>
-                <album>%Y: NYT Tech Talk</album>
-		<artist>NY Times: Tech Talk</artist>
 	</feed>
 
       <feed name="ThisAmericanLife">
@@ -94,14 +78,6 @@
         <count>5000</count>
       </feed>
 
-      <feed name="Zonker">
-        <subdir>LinuxQuestions</subdir>
-        <url>http://www.networkworld.com/podcasts/openmic/index.xml</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Zonker Open Mic</artist>
-        <album>%Y: Zonker Open Mic</album>
-        <count>200</count>
-      </feed>
       <feed name="FLOSSWeekly">
         <subdir>FLOSSWeekly</subdir>
         <url>http://leoville.tv/podcasts/floss.xml</url>
@@ -143,14 +119,6 @@
         <album>%Y: Software Engineering Radio</album>
         <count>7</count>
       </feed>
-      <feed name="LinuxKernel">
-        <subdir>LinuxKernel</subdir>
-        <url>http://podcasts.jonmasters.org/kernel/kernel.xml</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Linux Kernel</artist>
-        <album>%Y: Linux Kernel</album>
-        <count>50</count>
-      </feed>
       <feed name="CashPlays">
         <subdir>CashPlays</subdir>
         <url>http://feeds.feedburner.com/cash-plays?format=xml</url>
@@ -166,14 +134,6 @@
         <artist>Poker Road Radio</artist>
         <album>%Y: Poker Road Radio</album>
         <count>3</count>
-      </feed>
-      <feed name="BearPokerTips">
-        <subdir>BearPokerTips</subdir>
-        <url>http://feeds.feedburner.com/tips-from-the-bear?format=xml</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Barry Greenstein</artist>
-        <album>%Y: Tips from the Bear</album>
-        <count>200</count>
       </feed>
       <feed name="PokerBeat">
         <subdir>PokerBeat</subdir>
@@ -215,16 +175,16 @@
         <album>%Y: NotesInSpanish Advanced</album>
         <count>40</count>
       </feed>
-
-
-      <feed name="BSDTalk">
-        <subdir>BSDTalk</subdir>
-        <url>http://www2.madphilosopher.ca/bsdtalk_ogg.xml</url>
+      <feed name="FOSSBeer">
+        <subdir>FOSSBeer</subdir>
+        <url>http://fossbeer.com/?feed=rss2</url>
         <title>%Y-%m-%d: #T#</title>
-        <artist>BSD Talk</artist>
-        <album>%Y: BSD Talk</album>
-        <count>2</count>
+        <artist>FOSSBeer</artist>
+        <album>%Y: FOSSBeer</album>
+        <count>40</count>
       </feed>
+
+
       <feed name="StanfordCIS">
         <subdir>Stanford</subdir>
         <url>http://cyberlaw.stanford.edu/podcasts/podcast_rss.xml</url>
@@ -233,23 +193,6 @@
         <album>%Y: Stanford CIS</album>
         <count>5</count>
       </feed>
-      <feed name="PocketFives">
-        <subdir>PocketFives</subdir>
-        <url>http://www.pocketfives.com/podcasts/index.xml</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Pocket Fives Podcast</artist>
-        <album>%Y: Pocket Fives</album>
-        <count>5</count>
-      </feed>
-      <feed name="AnteUp">
-        <subdir>AnteUp</subdir>
-        <url>http://www.anteupmagazine.com/itunesxml.php</url>
-        <title>%Y-%m-%d: #T#</title>
-        <artist>Ante Up</artist>
-        <album>%Y: Ante Up</album>
-        <count>5</count>
-      </feed>
-
 
 </config>
 

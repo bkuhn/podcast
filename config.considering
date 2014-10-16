@@ -110,3 +110,55 @@ http://espn.go.com/espnradio/feeds/rss/podcast.xml?id=2509922
         <album>%Y: This Week in Django</album>
         <count>7</count>
       </feed>
+      <feed name="BSDTalk">
+        <subdir>BSDTalk</subdir>
+        <url>http://www2.madphilosopher.ca/bsdtalk_ogg.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>BSD Talk</artist>
+        <album>%Y: BSD Talk</album>
+        <count>2</count>
+      </feed>
+	<feed name="NYTimesTechTalk">
+		<url>http://nytimes.com/services/xml/rss/nyt/podcasts/techtalk.xml</url>
+		<count>200</count>
+            <subdir>NYTimesTechTalk</subdir>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: NYT Tech Talk</album>
+		<artist>NY Times: Tech Talk</artist>
+	</feed>
+	<feed name="NYTimesScience">
+		<url>http://nytimes.com/services/xml/rss/nyt/podcasts/sciencetimes.xml</url>
+		<count>200</count>
+            <subdir>NYTimesTechTalk</subdir>
+		<title>%Y-%m-%d: #T#</title>
+                <album>%Y: NYT Tech Talk</album>
+		<artist>NY Times: Tech Talk</artist>
+	</feed>
+      <feed name="AnteUp">
+        <subdir>AnteUp</subdir>
+        <url>http://www.anteupmagazine.com/itunesxml.php</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Ante Up</artist>
+        <album>%Y: Ante Up</album>
+        <count>5</count>
+      </feed>
+
+
+
+      <feed name="PocketFives">
+        <subdir>PocketFives</subdir>
+        <url>http://www.pocketfives.com/podcasts/index.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Pocket Fives Podcast</artist>
+        <album>%Y: Pocket Fives</album>
+        <count>5</count>
+      </feed>
+
+      <feed name="LinuxKernel">
+        <subdir>LinuxKernel</subdir>
+        <url>http://podcasts.jonmasters.org/kernel/kernel.xml</url>
+        <title>%Y-%m-%d: #T#</title>
+        <artist>Linux Kernel</artist>
+        <album>%Y: Linux Kernel</album>
+        <count>50</count>
+      </feed>
